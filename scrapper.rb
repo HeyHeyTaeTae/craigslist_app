@@ -31,7 +31,7 @@ def get_todays_rows(doc, date_str)
   rows = doc.css(".row")
   todays_rows = []
   rows.each do |row|
-    dateText = row.css(".date").text
+    dateText = row.css("time").text
     matches = dateText.match(date_str)
     todays_rows.push(row) if matches
   end
@@ -47,8 +47,10 @@ def search(date_str)
   regex = /puppy|pup|dog/i
   # Grab the page
   doc = get_page_results
+  #p doc 
   # Grab the rows
   rows = get_todays_rows(doc, date_str)
+  #p rows
   # Grab the links
   links = filter_links(rows, regex)
   puts links.join("\n#{'*'*50}\n")
@@ -60,4 +62,4 @@ end
 #   http://www.ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html#strftime-method
 today = Time.now.strftime("%b %d")
 puts today
-#search("Aug 13")
+search("Jun 10")
