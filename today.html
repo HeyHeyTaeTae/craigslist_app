@@ -1,52 +1,59 @@
-<!DOCTYPE html>
-<html class="no-js"><head>
-<title>
-    city of san francisco pets  - craigslist
-</title>
 
-    <meta name="description" content="city of san francisco pets  - craigslist">
-    <link rel="alternate" type="application/rss+xml" href="/sfc/pet/index.rss" title="RSS feed for craigslist | pets  in city of san francisco ">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=1">
-    <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/cl.css?v=53250f4569a4401ab1114e5be3ec4739">
-    <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/jquery-ui-1.9.2.custom.css?v=86db72e37d2cf63cab3c63485c71becb">
-    <link rel="prefetch" href="//www.craigslist.org/js/postings-concat.min.js?v=46ce368d11bf90346ceb104b4f77597d">
+<!DOCTYPE html>
+
+<html class="no-js"><head>
+    <title>SF bay area pets  - craigslist</title>
+
+    <meta name="description" content="SF bay area pets  - craigslist">
+    <link rel="canonical" href="https://sfbay.craigslist.org/search/sfc/pet">
+    <link rel="alternate" type="application/rss+xml" href="https://sfbay.craigslist.org/search/sfc/pet?format=rss" title="RSS feed for craigslist | SF bay area pets  - craigslist ">
     
-    <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/leaflet-stock.css?v=ea2cbe352bcad5eae1c267a9dd15a5c1">
+    <link rel="next" href="https://sfbay.craigslist.org/search/sfc/pet?s=100">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=1">
+    <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/cl.css?v=7f3bc5bed8cde572b9862753ab355fe4">
+    <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/tocs.css?v=f2b87d00d2694aedfa3b3c2c361acf91">
+    <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/jquery-ui-1.9.2.custom.css?v=86db72e37d2cf63cab3c63485c71becb">
+    <link rel="prefetch" href="//www.craigslist.org/js/postings-concat.min.js?v=048e9182f83dd72bae32bcfa351511d9">
+    
+    <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/leaflet-stock.css?v=969bf0c010aad78a472cb96ed5c1d1bc">
 <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/MarkerCluster.css?v=c9937ed03fbb57f185493cd8c283efeb">
-<link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/tocsmaps.css?v=121267b8f2a53b5a44b317236f261373">
+<link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/tocsmaps.css?v=0713fba1eea156d1e29815594450b352">
 <!--[if IE]>
     <link type="text/css" rel="stylesheet" media="all" href="//www.craigslist.org/styles/tocsmaps-ie.css?v=b21742b2ebe243963373e956ea115db0">
 <![endif]-->
     
         <script type="text/javascript"><!--
-            var currencySymbol = "&#x0024;";
-var areaRegion = "CA";
-var zoomToPosting = null;
-var showInfoText = "show info";
+            var expiredFavIDs = [];
 var subarea = "sfc";
-var imageHost = "http://images.craigslist.org";
+var maxResults = 2500;
 var lessInfoText = "less info";
 var showMapTabs = 1;
-var areaCountry = "US";
 var areaID = "1";
 var starHint = "save this post in your favorites list";
-var expFaves = null;
-var pID = null;
+var sectionAbb = "ccc";
 var catAbb = "pet";
-var catType = "ccc";
+var currencySymbol = "&#x0024;";
+var noImageText = "no image";
+var areaRegion = "CA";
+var showInfoText = "show info";
+var zoomToPosting = null;
+var imageHost = "http://images.craigslist.org";
+var areaCountry = "US";
+var countOfTotalText = "image {count} of {total}";
+var pID = null;
 
         --></script>
     
     <!--[if lt IE 9]>
-<script  src="//www.craigslist.org/js/html5shiv.min.js?v=42e8031bc7ca9d67a48f4a5feff7bf29" type="text/javascript" ></script>
+<script src="//www.craigslist.org/js/html5shiv.min.js?v=096822b653643ed1af3136947e4ea79a" type="text/javascript" ></script>
 <![endif]-->
 <!--[if lte IE 7]>
-<script  src="//www.craigslist.org/js/json2.min.js?v=178d4ad319e0e0b4a451b15e49b71bec" type="text/javascript" ></script>
+<script src="//www.craigslist.org/js/json2.min.js?v=178d4ad319e0e0b4a451b15e49b71bec" type="text/javascript" ></script>
 <![endif]-->
 </head>
 
-<body class="toc">
-    <script type="text/javascript"><!--
+<body class="toc  search">
+  <script type="text/javascript"><!--
     function C(k){return(document.cookie.match('(^|; )'+k+'=([^;]*)')||0)[2]}
     var pagetype, pagemode;
     (function(){
@@ -54,437 +61,646 @@ var catType = "ccc";
         h.className = h.className.replace('no-js', 'js');
         var b = document.body;
         var bodyClassList = b.className.split(/\s+/);;
-        pagetype = bodyClassList[0];
+        pagetype = bodyClassList[0]; // dangerous assumption
         var fmt = C('cl_fmt');
-        if (fmt) {
+        if ( fmt === 'regular' || fmt === 'mobile' ) {
             pagemode = fmt;
-            bodyClassList.push(fmt);
         } else if (screen.width <= 480) {
             pagemode = 'mobile';
-            bodyClassList.push(pagemode);
+        } else {
+            pagemode = 'regular';
+        }
+        var lng = C('cl_def_lang');
+        if (lng) bodyClassList.push(lng);
+        pagemode = pagemode === 'mobile' ? 'mobile' : 'desktop';
+        bodyClassList.push(pagemode);
+        if (C('hidesearch') === '1' && pagemode !== 'mobile') {
+            bodyClassList.push('hide-search');
         }
         var width = window.innerWidth || document.documentElement.clientWidth;
         if (width > 1000) { bodyClassList.push('w1024'); }
-        if (typeof catType !== 'undefined') {
-            var mode = (decodeURIComponent(C('cl_tocmode') || '').match(new RegExp(catType + ':([^,]+)', 'i')) || {})[1];
-            for (var i = 0, len = bodyClassList.length; i < len; i++){
-                if (bodyClassList[i] === 'map') { mode = undefined; }
+        if (typeof sectionAbb !== 'undefined') {
+            var mode = (decodeURIComponent(C('cl_tocmode') || '').match(new RegExp(sectionAbb + ':([^,]+)', 'i')) || {})[1];
+            if (mode) {
+                bodyClassList.push(mode);
             }
-            if (mode) { bodyClassList.push(mode); }
         }
         b.className = bodyClassList.join(' ');
     }());
 --></script>
 
 
-    <article id="pagecontainer">
-        <div class="bglogo"></div>
-
-        <header class="bchead">
+  <article id="pagecontainer">
+    <div class="bglogo"></div>
+    <header class="bchead">
     <form id="breadcrumbform" method="get" action="/search/sfc/pet" data-action="/search/###/pet">
         
-        <div class="contents closed">
+        <nav class="contents closed">
             <div class="breadbox">
-                <div class="mi post"><a href="https://post.craigslist.org/c/sfo?lang=en">post</a></div>
-                <div class="mi account"><em>[ </em><a href="https://accounts.craigslist.org/login/home">account</a><em> ]</em></div>
-                <div class="mi fav"><div id="favorites">
-    <a href="#" class="favlink"><span class="n">0</span> favorites</a>
-</div></div>
-                <span class="crumb"><a href="//www.craigslist.org/about/sites">CL</a> &gt;</span><span class="crumb"><a href="/">SF bay area</a> &gt;</span><span class="crumb"><select id="subAbb" name="subAbb">
-<option value=''>all SF bay area</option><option value='sfc' selected>san francisco</option><option value='sby'>south bay</option><option value='eby'>east bay</option><option value='pen'>peninsula</option><option value='nby'>north bay</option><option value='scz'>santa cruz</option>
-</select> <span class="no-js"> <input type="submit" value="go"></span></span>
+                <ul class="breadcrumbs">
+                    <li class="crumb cl"><a href="/">CL</a></li><li class="crumb area"><span class="no-js"><a href="/">SF bay area</a></span>
+<select name="areaAbb" id="areaAbb" class="js-only">
+    <option value="sfbay">SF bay area</option>
+    <option value="bakersfield">bakersfield</option>
+    <option value="chico">chico</option>
+    <option value="fresno">fresno</option>
+    <option value="goldcountry">gold country</option>
+    <option value="hanford">hanford</option>
+    <option value="mendocino">mendocino co</option>
+    <option value="merced">merced</option>
+    <option value="modesto">modesto</option>
+    <option value="monterey">monterey</option>
+    <option value="redding">redding</option>
+    <option value="reno">reno</option>
+    <option value="sacramento">sacramento</option>
+    <option value="slo">san luis obispo</option>
+    <option value="santamaria">santa maria</option>
+    <option value="stockton">stockton</option>
+    <option value="susanville">susanville</option>
+    <option value="visalia">visalia-tulare</option>
+    <option value="yubasutter">yuba-sutter</option>
+</select>
+ &gt;</li><li class="crumb subarea"><select id="subArea" name="subArea">
+    <option value="">all SF bay area</option>
+    <option value="eby">east bay</option>
+    <option value="nby">north bay</option>
+    <option value="pen">peninsula</option>
+    <option value="sfc" selected>san francisco</option>
+    <option value="scz">santa cruz</option>
+    <option value="sby">south bay</option>
+</select>
+ &gt;</li><li class="crumb section"><select name="catAbb" id="catAbb">
+    <option value="ccc" selected>community</option>
+    <option value="eee">events</option>
+    <option value="sss">for sale</option>
+    <option value="ggg">gigs</option>
+    <option value="hhh">housing</option>
+    <option value="jjj">jobs</option>
+    <option value="ppp">personals</option>
+    <option value="rrr">resumes</option>
+    <option value="bbb">services</option>
+</select>
+ &gt;</li><li class="crumb category"><select id="subcatAbb" class="js-only">
+    <option value="ccc">all</option>
+<option value="act">activity partners</option>
+<option value="ats">artists</option>
+<option value="kid">childcare</option>
+<option value="com">general</option>
+<option value="grp">groups</option>
+<option value="vnn">local news and views</option>
+<option value="laf">lost & found</option>
+<option value="muc">musicians</option>
+<option value="pet" selected>pets</option>
+<option value="pol">politics</option>
+<option value="rid">rideshare</option>
+<option value="vol">volunteers</option>
+</select><span class="no-js">pets</span> <span class="no-js"> <input type="submit" value="go"></span></li>
+                </ul>
+                <ul class="userlinks">
+    <li class="user post"><a href="https://post.craigslist.org/c/sfo?lang=en">post</a></li>
+    <li class="user account"><em>[ </em><a href="https://accounts.craigslist.org/login/home">account</a><em> ]</em></li>
+    <li class="user fav"><div class="favorites">
+    <a href="#" class="favlink"><span class="n">0</span><span class="no-mobile"> favorites</span></a>
+</div></li>
+    <li><div class="menu-button">&mdash; &mdash; &mdash;</div></li>
+</ul>
             </div>
-            <div class="dropdown">&mdash; &mdash; &mdash;</div>
-        </div>
+            <div class="clearfix"></div>
+        </nav>
     </form>
 </header>
 
-        <blockquote class="searchform">
+    <div class="middle">
+      <form id="searchform" action="/search/sfc/pet">
+        <div class="searchbox">
+          <input id="excats" type="hidden" name="excats">
+          
+          <div class="searchgroup showoptions linklike closed">
+            <span class="open">&ndash;</span><span class="closed">+</span> categories & options
+            <div class="mobile-favorites mobile-only"><div class="favorites">
+    <a href="#" class="favlink"><span class="n">0</span><span class="no-mobile"> favorites</span></a>
+</div></div>
+          </div>
+          <div class="searchoptions closed">
             
+    
         <script type="text/javascript"><!--
-            var catAbb = "pet";
+            var odaCats = {};
 
         --></script>
     
-<form action="/search/pet/sfc" id="searchform" method="get" accept-charset="utf-8">
-    <input id="zoomtoposting" type="hidden" name="zoomToPosting" value="">
-
-    <fieldset id="searchfieldset">
-    <legend id="searchlegend"><select id="catAbb" name="catAbb">
-
-        <option value="ccc">all community</option>
-<option disabled value="">--</option>
-<option value=""> </option>
-<option value="act"> activity partners</option>
-<option value="ats"> artists</option>
-<option value="kid"> childcare</option>
-<option value="com"> general community</option>
-<option value="grp"> groups</option>
-<option value="vnn"> local news and views</option>
-<option value="laf"> lost &amp; found</option>
-<option value="muc"> musicians</option>
-<option value="pet" selected> pets</option>
-<option value="pol"> politics</option>
-<option value="rid"> rideshare</option>
-<option value="vol"> volunteers</option>
-<option disabled value="">--</option>
-
-        <option value="eee">all events</option>
-
-        <option value="sss">all for sale / wanted</option>
-
-        <option value="ggg">all gigs</option>
-
-        <option value="hhh">all housing</option>
-
-        <option value="jjj">all jobs</option>
-
-        <option value="ppp">all personals</option>
-
-        <option value="rrr">all resumes</option>
-
-        <option value="bbb">all services</option>
-</select></legend>
-    <div class="experimentalFeature">
-             
-        </div>
-    <div id="searchtable">
-        <span class="searchgroup">
-            <span>
-                <input id="query" name="query" data-suggest="search" size="24" maxlength="180" value="" placeholder="search" autocorrect="off" autocapitalize="off">
-            </span>
-            <input id="searchbtn" type="submit" value="search">
-        </span>
-
+    <div class="searchgroup categories">
+        <div class="cattitle"><a href="/search/sfc/pet" title="clear all search parameters" class="reset">pets</a></div>
         
+    </div>
+            <input type="hidden" name="is_paid" id="is_paid" value="">
+            
+            <div class="searchgroup">
+            <ul><li><label class="srchType"><input type="checkbox" name="srchType" class="autosubmit" value="T" >search titles only</label></li><li><label class="hasPic"><input type="checkbox" name="hasPic" class="autosubmit" value="1" >has image</label></li><li><label class="postedToday"><input type="checkbox" name="postedToday" class="autosubmit" value="1" >posted today</label></li></ul>
 
-        
+            <ul class="js-only nearbyAreas ">
+              
+            </ul>
+            </div>
+            <div class="searchgroup">      <div id="headerattr_nh" class="catfilter attr_picker multilink "
+            data-checked-count="0" data-attr="nh">
+        <span id="plusminus_nh" class="plusminus">+</span>neighborhoods
+      </div>
+<ul id="ul_nh" class="attr_list hideme">           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="alamo_square_/_nopa_149" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="149" type="checkbox">
+               alamo square / nopa
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="bayview_110" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="110" type="checkbox">
+               bayview
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="bernal_heights_3" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="3" type="checkbox">
+               bernal heights
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="castro_/_upper_market_4" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="4" type="checkbox">
+               castro / upper market
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="cole_valley_/_ashbury_hts_5" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="5" type="checkbox">
+               cole valley / ashbury hts
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="downtown_/_civic_/_van_ness_6" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="6" type="checkbox">
+               downtown / civic / van ness
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="excelsior_/_outer_mission_7" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="7" type="checkbox">
+               excelsior / outer mission
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="financial_district_8" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="8" type="checkbox">
+               financial district
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="glen_park_9" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="9" type="checkbox">
+               glen park
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="haight_ashbury_11" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="11" type="checkbox">
+               haight ashbury
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="hayes_valley_12" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="12" type="checkbox">
+               hayes valley
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="ingleside_/_SFSU_/_CCSF_13" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="13" type="checkbox">
+               ingleside / SFSU / CCSF
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="inner_richmond_14" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="14" type="checkbox">
+               inner richmond
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="inner_sunset_/_UCSF_15" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="15" type="checkbox">
+               inner sunset / UCSF
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="laurel_hts_/_presidio_16" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="16" type="checkbox">
+               laurel hts / presidio
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="lower_haight_10" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="10" type="checkbox">
+               lower haight
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="lower_nob_hill_20" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="20" type="checkbox">
+               lower nob hill
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="lower_pac_hts_24" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="24" type="checkbox">
+               lower pac hts
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="marina_/_cow_hollow_17" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="17" type="checkbox">
+               marina / cow hollow
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="mission_district_18" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="18" type="checkbox">
+               mission district
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="nob_hill_19" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="19" type="checkbox">
+               nob hill
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="noe_valley_21" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="21" type="checkbox">
+               noe valley
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="north_beach_/_telegraph_hill_22" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="22" type="checkbox">
+               north beach / telegraph hill
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="pacific_heights_23" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="23" type="checkbox">
+               pacific heights
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="portola_district_164" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="164" type="checkbox">
+               portola district
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="potrero_hill_25" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="25" type="checkbox">
+               potrero hill
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="richmond_/_seacliff_26" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="26" type="checkbox">
+               richmond / seacliff
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="russian_hill_27" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="27" type="checkbox">
+               russian hill
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="SOMA_/_south_beach_1" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="1" type="checkbox">
+               SOMA / south beach
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="sunset_/_parkside_28" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="28" type="checkbox">
+               sunset / parkside
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="tenderloin_156" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="156" type="checkbox">
+               tenderloin
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="treasure_island_157" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="157" type="checkbox">
+               treasure island
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="twin_peaks_/_diamond_hts_29" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="29" type="checkbox">
+               twin peaks / diamond hts
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="USF_/_panhandle_2" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="2" type="checkbox">
+               USF / panhandle
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="visitacion_valley_118" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="118" type="checkbox">
+               visitacion valley
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="west_portal_/_forest_hill_114" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="114" type="checkbox">
+               west portal / forest hill
+             </label>
+           </li>
+           <li class="attr_nh ">
+             <label data-attr="nh">
+               <input id="western_addition_30" name="nh"
+                      class="multi_checkbox multi_nh" data-attr="nh"
+                      
+                      value="30" type="checkbox">
+               western addition
+             </label>
+           </li>
+<li class="selectall js-only attr_nh "><label><input type="checkbox" data-attr="nh" class="selectallcb multi_checkbox" > <span class="all select_all_nh">select all</span><span class="none deselect_all_nh">deselect all</span></label></li></ul></div>
+            
+            
+              <div class="searchgroup resetsearch">
+                <a href="/search/sfc/pet" title="clear all search parameters" class="reset linklike">reset</a>
+                <button type="submit" class="searchlink linklike">search</button>
+              </div>
+            </div>
 
-        <span class="searchgroup"><span id="hoodpicker"><span class="searchgroup">
-<div style="position: relative;">
-    <noscript>
-        <select name="nh">
-            <option value="">all neighborhoods</option>
-            <option value="149">alamo square / nopa</option>
-<option value="110">bayview</option>
-<option value="3">bernal heights</option>
-<option value="4">castro / upper market</option>
-<option value="5">cole valley / ashbury hts</option>
-<option value="6">downtown / civic / van ness</option>
-<option value="7">excelsior / outer mission</option>
-<option value="8">financial district</option>
-<option value="9">glen park</option>
-<option value="11">haight ashbury</option>
-<option value="12">hayes valley</option>
-<option value="13">ingleside / SFSU / CCSF</option>
-<option value="14">inner richmond</option>
-<option value="15">inner sunset / UCSF</option>
-<option value="16">laurel hts / presidio</option>
-<option value="10">lower haight</option>
-<option value="20">lower nob hill</option>
-<option value="24">lower pac hts</option>
-<option value="17">marina / cow hollow</option>
-<option value="18">mission district</option>
-<option value="19">nob hill</option>
-<option value="21">noe valley</option>
-<option value="22">north beach / telegraph hill</option>
-<option value="23">pacific heights</option>
-<option value="164">portola district</option>
-<option value="25">potrero hill</option>
-<option value="26">richmond / seacliff</option>
-<option value="27">russian hill</option>
-<option value="1">SOMA / south beach</option>
-<option value="28">sunset / parkside</option>
-<option value="156">tenderloin</option>
-<option value="157">treasure island</option>
-<option value="29">twin peaks / diamond hts</option>
-<option value="2">USF / panhandle</option>
-<option value="118">visitacion valley</option>
-<option value="30">western addition</option>
-<option value="114">west portal / forest hill</option>
-
-        </select>
-    </noscript>
-
-    <button id="hoodtitle" type="button" style="display:none;">
-        <span id="hoodtogon">[+]</span><span id="hoodtogoff">[-]</span>
-        <span id="hoodcount">all</span> neighborhoods
-    </button>
-</div>
-</span>
-
-    <select name="nh" id="nh" multiple="multiple" disabled="disabled">
-        <option id="all" value="">all neighborhoods</option>
-        <option value="149">alamo square / nopa</option>
-<option value="110">bayview</option>
-<option value="3">bernal heights</option>
-<option value="4">castro / upper market</option>
-<option value="5">cole valley / ashbury hts</option>
-<option value="6">downtown / civic / van ness</option>
-<option value="7">excelsior / outer mission</option>
-<option value="8">financial district</option>
-<option value="9">glen park</option>
-<option value="11">haight ashbury</option>
-<option value="12">hayes valley</option>
-<option value="13">ingleside / SFSU / CCSF</option>
-<option value="14">inner richmond</option>
-<option value="15">inner sunset / UCSF</option>
-<option value="16">laurel hts / presidio</option>
-<option value="10">lower haight</option>
-<option value="20">lower nob hill</option>
-<option value="24">lower pac hts</option>
-<option value="17">marina / cow hollow</option>
-<option value="18">mission district</option>
-<option value="19">nob hill</option>
-<option value="21">noe valley</option>
-<option value="22">north beach / telegraph hill</option>
-<option value="23">pacific heights</option>
-<option value="164">portola district</option>
-<option value="25">potrero hill</option>
-<option value="26">richmond / seacliff</option>
-<option value="27">russian hill</option>
-<option value="1">SOMA / south beach</option>
-<option value="28">sunset / parkside</option>
-<option value="156">tenderloin</option>
-<option value="157">treasure island</option>
-<option value="29">twin peaks / diamond hts</option>
-<option value="2">USF / panhandle</option>
-<option value="118">visitacion valley</option>
-<option value="30">western addition</option>
-<option value="114">west portal / forest hill</option>
-
-    </select></span></span>
-        <span class="searchgroup">
-            <label>
-                <input type="checkbox" name="hasPic" value="1" ><span class="haspic">pic</span>
-            </label>
-            <label>
-                    <input type="checkbox" name="srchType" value="T"
-                    title="search only posting titles">title
-            </label>
-        </span>
-
-        <span class="searchgroup"></span>
-
-	</div>
-    </fieldset>
-    <input id="excats" type="hidden" name="excats" value="">
-    
-</form>
-        </blockquote>
-
-        <section class="body">
-            <section class="favlistinfo">
+            <div class="no-mobile">
                 
-                
-            </section>
+            </div>
+          </div>
 
-            <div id="toc_rows">
-                <div class="toc_legend">
-                    <div class="center">
-                        <span class="tocview buttongroup js-only"><a href="#list" title="show results in a list" class="mode button" data-view="list" id="listview">list</a><a href="#pic" title="show results in a list with thumbnail pictures" class="mode button" data-view="pic" id="picview">thumb</a><a href="#grid" title="show results side-by-side with larger pictures" class="mode button" data-view="grid" id="gridview">gallery</a><a href="#map" title="show results on a map" class="mapview mode button" data-view="map" id="mapview">map</a></span><span class="paginator buttongroup">
-<span class="resulttotal">displaying <span class='displaycount'>...</span>  postings</span><span class="buttons"><span class="button first" title="first page"> &lt;&lt; </span><span class="button prev" title="previous page"> &lt; prev </span><span class="button pagenum">1 - 100 </span><a href='/sfc/pet/index100.html' class="button next" title="next page"> next &gt; </a></span>
-</span><span class="tocsort buttongroup"><span class="button sel">newest</span></span>
-                    </div>
-                    
+          <div class="rightpane">
+            <div class="querybox">
+              
+              <span class="form-tab js-only"><span class="search-open" title="hide search">&laquo;</span><span class="search-closed" title="show search">&raquo;</span></span>
+              <input type="text" placeholder="search pets" name="query"
+                     id="query" value="" autocorrect="off"
+                     autocapitalize="off" autocomplete="off" data-autocomplete="search" 
+                     class="flatinput ui-autocomplete-input">
+              <button type="submit" class="searchbtn"><span class="searchicon"></span></button>
+              <div class="savealert">
+                   <a class="saveme no-mobile" data-action="alert" href="https://accounts.craigslist.org/login?rt=L&amp;rp=%2Fsavesearch%2Falert%3FURL%3Dhttps%253A%252F%252Fsfbay%252Ecraigslist%252Eorg%252Fsearch%252Fsfc%252Fpet" title="save this search with email alerts ">email alert</a>
+                   <a class="saveme no-mobile" data-action="save" href="https://accounts.craigslist.org/login?rt=L&amp;rp=%2Fsavesearch%2Fsave%3FURL%3Dhttps%253A%252F%252Fsfbay%252Ecraigslist%252Eorg%252Fsearch%252Fsfc%252Fpet" title="save this search ">save search</a>
+                   <a class="saveme mobile-only" href="https://accounts.craigslist.org/login?rt=L&amp;rp=%2Fsavesearch%2Falert%3FURL%3Dhttps%253A%252F%252Fsfbay%252Ecraigslist%252Eorg%252Fsearch%252Fsfc%252Fpet">search alert</a>
                 </div>
-
-                <div class="content">
+            </div>
+            <div class="toc_legend">
+              <div class="center">
+                <div class="tocview"><span class="buttongroup js-only"><a href="#list" title="show results in a list" class="mode button" data-view="list" id="listview">list</a><a href="#pic" title="show results in a list with thumbnail pictures" class="mode button" data-view="pic" id="picview">thumb</a><a href="#grid" title="show results side-by-side with larger pictures" class="mode button" data-view="grid" id="gridview">gallery</a><a href="#map" title="show results on a map" class="mode button" data-view="map" id="mapview">map</a></span></div><div class="tocsort"><span class="buttongroup"><span class="button sel">newest</span></span></div><span class="paginator buttongroup  firstpage"><span class="resulttotal">displaying <span class="displaycount">...</span> of <span class="totalcount">269</span> postings</span><span class="buttons"><a href="/search/sfc/pet" class="button first" title="first page">&lt;&lt;</a><span class="button first" title="first page">&lt;&lt;</span><a href="/search/sfc/pet" class="button prev" title="previous page">&lt; prev</a><span class="button prev" title="previous page">&lt; prev</span><span class="button pagenum"><span class="range"><span class="rangeFrom">1</span> to <span class="rangeTo">100</span></span> of <span class="totalcount">269</span></span><a href="/search/sfc/pet?s=100" class="button next" title="next page"> next &gt; </a><span class="button next" title="next page"> next &gt; </span></span></span>
+              </div>
+              
+            </div>
+            <div class="content">
+              <section class="favlistsection">
+                <section class="favlistinfo">
                     
-                    <h4 class="ban"><span class="bantext">Tue 12 Aug</span></h4>
- <p class="row" data-pid="4616162478"> <a href="/sfc/pet/4616162478.html" class="i" data-id="0:00Y0Y_ge2Z8hs00L5"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4616162478.html" data-id="4616162478" class="hdrlnk">Albino Burmese Pythons</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4616162478">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4616050665"> <a href="/sfc/pet/4616050665.html" class="i" data-id="0:00p0p_lwNK3DkKxIw"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4616050665.html" data-id="4616050665" class="hdrlnk">Yorkie purebred tea cup </a> </span> <span class="l2">   <span class="pnr"> <small> (bayview)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4616123954"> <a href="/sfc/pet/4616123954.html" class="i" data-id="0:00K0K_4dCJJOb6qVA"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4616123954.html" data-id="4616123954" class="hdrlnk">Adopt Caylee, playful pointer/pitty mix</a> </span> <span class="l2">   <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4607014249"> <a href="/sfc/pet/4607014249.html" class="i" data-id="0:01515_i5Remh53twE"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4607014249.html" data-id="4607014249" class="hdrlnk">Dog Walker &amp; House Sitter in</a> </span> <span class="l2">   <span class="pnr"> <small> (cole valley / ashbury hts)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4607014249">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4616097448"> <a href="/sfc/pet/4616097448.html" class="i" data-id="0:00O0O_6uZr2YR5HSm"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4616097448.html" data-id="4616097448" class="hdrlnk">Min Pin Puppies</a> </span> <span class="l2">   <span class="pnr"> <small> (laurel hts / presidio)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4616097448">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4616046775"> <a href="/sfc/pet/4616046775.html" class="i" data-id="0:00w0w_1VcOChk4AF8"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4616046775.html" data-id="4616046775" class="hdrlnk">Nice wooden dog house. Large</a> </span> <span class="l2">   <span class="pnr"> <small> (Tracy)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4616046775">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4581207354"> <a href="/sfc/pet/4581207354.html" class="i" data-id="0:00H0H_foAFgde4MqS"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4581207354.html" data-id="4581207354" class="hdrlnk">Cop Kills Dog in Dog Owners Yard</a> </span> <span class="l2">   <span class="pnr"> <small> (Everywhere)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4581207354">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4581207234"> <a href="/sfc/pet/4581207234.html" class="i" data-id="0:00F0F_kUje2CUzekG"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4581207234.html" data-id="4581207234" class="hdrlnk">$25/night In Home Dog Sitter! Small Dog Retreat &#9829;</a> </span> <span class="l2">   <span class="pnr"> <small> (Bay Area)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4581207234">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4573926318"> <a href="/sfc/pet/4573926318.html" class="i" data-id="0:00D0D_7gy11HUbKDq"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4573926318.html" data-id="4573926318" class="hdrlnk">8 Year Old Black Female Lab</a> </span> <span class="l2">   <span class="pnr"> <small> (Golden Gate Labrador Retriever Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4598144944"> <a href="/sfc/pet/4598144944.html" class="i" data-id="0:00x0x_2Wu9vKStHZj"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4598144944.html" data-id="4598144944" class="hdrlnk">9 Year Old Black Male Labrador</a> </span> <span class="l2">   <span class="pnr"> <small> (Golden Gate Labrador Retriever Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615898764"> <a href="/sfc/pet/4615898764.html" class="i" data-id="0:00V0V_4G68nNZrHaV"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615898764.html" data-id="4615898764" class="hdrlnk">My Kitty Needs a New Home</a> </span> <span class="l2">   <span class="pnr"> <small> (ingleside / SFSU / CCSF)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4615898764">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615919102"> <a href="/sfc/pet/4615919102.html" class="i" data-id="0:00l0l_diTyBXrWi2t"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615919102.html" data-id="4615919102" class="hdrlnk">14 Month old Siamese Cat</a> </span> <span class="l2">   <span class="pnr"> <small> (inner sunset / UCSF)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4611779148"> <a href="/sfc/pet/4611779148.html" class="i" data-id="0:00Y0Y_3gXUWEA0YFk"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4611779148.html" data-id="4611779148" class="hdrlnk">yorkies</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4592761161"> <a href="/sfc/pet/4592761161.html" class="i" data-id="0:01515_64Apw5wJRHk"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4592761161.html" data-id="4592761161" class="hdrlnk">WEIMARANER, 5 y/o male - COLT</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4592761161">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615706827"> <a href="/sfc/pet/4615706827.html" class="i" data-id="0:01515_jMBLTLTymuM"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615706827.html" data-id="4615706827" class="hdrlnk">Rottweiler</a> </span> <span class="l2">   <span class="pnr"> <small> (Roseville, ca)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4596743835"> <a href="/sfc/pet/4596743835.html" class="i" data-id="0:00202_iqrlMjwXrhT"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4596743835.html" data-id="4596743835" class="hdrlnk">Corn Snake, $15 Rehoming Fee...</a> </span> <span class="l2">   <span class="pnr"> <small> (richmond / seacliff)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4596743835">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4606922473"> <a href="/sfc/pet/4606922473.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4606922473.html" data-id="4606922473" class="hdrlnk">FREE house-sitting/pet-sitting by professional couple!</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> <span class="maptag" data-pid="4606922473">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604244488"> <a href="/sfc/pet/4604244488.html" class="i" data-id="0:00K0K_6GPUBPisYij"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604244488.html" data-id="4604244488" class="hdrlnk">Dexter-Cocker Spaniel (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604238264"> <a href="/sfc/pet/4604238264.html" class="i" data-id="0:00z0z_5HETrExceGB"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604238264.html" data-id="4604238264" class="hdrlnk">Whittaker- Terrier Mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604255220"> <a href="/sfc/pet/4604255220.html" class="i" data-id="0:00g0g_lY07nbems3V"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604255220.html" data-id="4604255220" class="hdrlnk">Alfred-Australian Shepherd (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604268110"> <a href="/sfc/pet/4604268110.html" class="i" data-id="0:00H0H_z2D1xyLrbL"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604268110.html" data-id="4604268110" class="hdrlnk">Jaime-Terrier/ Chihuahua mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604273794"> <a href="/sfc/pet/4604273794.html" class="i" data-id="0:00H0H_hEM3iQ1qhfw"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604273794.html" data-id="4604273794" class="hdrlnk">Mason- Pit Bull Terrier (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604313956"> <a href="/sfc/pet/4604313956.html" class="i" data-id="0:01515_1lXU5OLNwqa"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604313956.html" data-id="4604313956" class="hdrlnk">Herbert- Bull Terrier Mix ( Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604289808"> <a href="/sfc/pet/4604289808.html" class="i" data-id="0:00m0m_eC6LbwepM8M"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604289808.html" data-id="4604289808" class="hdrlnk">Pepper-Dachshund Mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604328031"> <a href="/sfc/pet/4604328031.html" class="i" data-id="0:00S0S_9eWjNsBYInN"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604328031.html" data-id="4604328031" class="hdrlnk">Tigger- Shar Pei mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (Misson District )</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604402676"> <a href="/sfc/pet/4604402676.html" class="i" data-id="0:00B0B_6rLOObf5jS5"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604402676.html" data-id="4604402676" class="hdrlnk">Crystal Gayle- Cattle Dog Mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604379691"> <a href="/sfc/pet/4604379691.html" class="i" data-id="0:00G0G_68TFEJss6Xn"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604379691.html" data-id="4604379691" class="hdrlnk">Jax-Husky (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4606374511"> <a href="/sfc/pet/4606374511.html" class="i" data-id="0:00H0H_eP8bURk7QQl"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4606374511.html" data-id="4606374511" class="hdrlnk">Newton-Pit bull/Hound Mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4606396405"> <a href="/sfc/pet/4606396405.html" class="i" data-id="0:00808_g4UFm12shm6"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4606396405.html" data-id="4606396405" class="hdrlnk">Buster-Dachshund Mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604309004"> <a href="/sfc/pet/4604309004.html" class="i" data-id="0:00d0d_eLVzDQnfVsI"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604309004.html" data-id="4604309004" class="hdrlnk">Geronimo- Bull Terrier (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604297272"> <a href="/sfc/pet/4604297272.html" class="i" data-id="0:00P0P_bcqssgTPofc"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604297272.html" data-id="4604297272" class="hdrlnk">Chiquis -White Boxer (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604323705"> <a href="/sfc/pet/4604323705.html" class="i" data-id="0:00h0h_1RPR2OgtF0J"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604323705.html" data-id="4604323705" class="hdrlnk">Katie-Kelpie/Aussie (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (Mission District )</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604390413"> <a href="/sfc/pet/4604390413.html" class="i" data-id="0:00u0u_jOK3KdPI1b2"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604390413.html" data-id="4604390413" class="hdrlnk">Mamabear- Chow mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604302626"> <a href="/sfc/pet/4604302626.html" class="i" data-id="0:00T0T_5sZvykAzSFd"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4604302626.html" data-id="4604302626" class="hdrlnk">Rufus- Pit Bull Terrier Mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4583554345"> <a href="/sfc/pet/4583554345.html" class="i" data-id="0:00O0O_g9d1TOA6iR7"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4583554345.html" data-id="4583554345" class="hdrlnk">FERAL CAT: Got rodents? Barn cats are ready to help!</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4570594762"> <a href="/sfc/pet/4570594762.html" class="i" data-id="0:00V0V_lSPaifOBG00"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4570594762.html" data-id="4570594762" class="hdrlnk">Dog/puppy items: Halti</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4570594762">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4611140157"> <a href="/sfc/pet/4611140157.html" class="i" data-id="0:01414_amjvziEEDia"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4611140157.html" data-id="4611140157" class="hdrlnk">Dog/puppy items: Self-refilling water dish</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4611140157">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4611137396"> <a href="/sfc/pet/4611137396.html" class="i" data-id="0:00t0t_5T4km6I0tjy"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4611137396.html" data-id="4611137396" class="hdrlnk">Dog/puppy items: Slicker brush</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615602447"> <a href="/sfc/pet/4615602447.html" class="i" data-id="0:00O0O_fl3xNmKA95I"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615602447.html" data-id="4615602447" class="hdrlnk">Rottweiler needs home urgent</a> </span> <span class="l2">   <span class="pnr"> <small> (sunset / parkside)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4615602447">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615485291"> <a href="/sfc/pet/4615485291.html" class="i" data-id="0:00h0h_lftDNB9l3xX"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615485291.html" data-id="4615485291" class="hdrlnk">XS bark'n boots dog boots $20</a> </span> <span class="l2">   <span class="pnr"> <small> (ingleside / SFSU / CCSF)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4615485291">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615473350"> <a href="/sfc/pet/4615473350.html" class="i" data-id="0:00L0L_eB42MSp3hyp"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615473350.html" data-id="4615473350" class="hdrlnk">FOUND: Dog in Stern Grove </a> </span> <span class="l2">   <span class="pnr"> <small> (sunset / parkside)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4615473350">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615421895"> <a href="/sfc/pet/4615421895.html" class="i" data-id="0:00303_luqitwxLvQg"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615421895.html" data-id="4615421895" class="hdrlnk">Reliable Dog Walker or Pet Sitter,With (EXCELLENT REFERENCES)</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615456950"> <a href="/sfc/pet/4615456950.html" class="i" data-id="0:00000_bwcK4j7Fen5"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615456950.html" data-id="4615456950" class="hdrlnk">Beautiful Cattle Dog Female, 2.5 yrs to adopt..</a> </span> <span class="l2">   <span class="pnr"> <small> (Copper's Dream Rescue of the Bay Area)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615328150"> <a href="/sfc/pet/4615328150.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615328150.html" data-id="4615328150" class="hdrlnk">teacup chihuahua puppy  </a> </span> <span class="l2">   <span class="pnr"> <small> (bayview)</small> <span class="px"> <span class="p"> </span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615326937"> <a href="/sfc/pet/4615326937.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615326937.html" data-id="4615326937" class="hdrlnk">teacup chihuahua  puppy</a> </span> <span class="l2">   <span class="pnr"> <small> (bayview)</small> <span class="px"> <span class="p"> </span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4611130648"> <a href="/sfc/pet/4611130648.html" class="i" data-id="0:00O0O_cMrxDHTvdVm"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4611130648.html" data-id="4611130648" class="hdrlnk">Lab/Pit/Sheppard Puppies</a> </span> <span class="l2">   <span class="pnr"> <small> (USF / panhandle)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615144024"> <a href="/sfc/pet/4615144024.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615144024.html" data-id="4615144024" class="hdrlnk">shihtzu wanted</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> <span class="maptag" data-pid="4615144024">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615064961"> <a href="/sfc/pet/4615064961.html" class="i" data-id="0:00h0h_aMmvGCnM5X6"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615064961.html" data-id="4615064961" class="hdrlnk">Lovable Loach Looking For Love</a> </span> <span class="l2">   <span class="pnr"> <small> (haight ashbury)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4615060075"> <a href="/sfc/pet/4615060075.html" class="i" data-id="0:00N0N_jREHM79kVNc"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4615060075.html" data-id="4615060075" class="hdrlnk">Two Chinchillas With Cage</a> </span> <span class="l2">   <span class="pnr"> <small> (excelsior / outer mission)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4606754937"> <a href="/sfc/pet/4606754937.html" class="i" data-id="0:00c0c_ia91hqrYjNB"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4606754937.html" data-id="4606754937" class="hdrlnk">jewel cichlid fishes</a> </span> <span class="l2">   <span class="pnr"> <small> (excelsior / outer mission)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4606754937">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4606737170"> <a href="/sfc/pet/4606737170.html" class="i" data-id="0:00303_k3mquj8L8P6"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4606737170.html" data-id="4606737170" class="hdrlnk">Robo hamster</a> </span> <span class="l2">   <span class="pnr"> <small> (north beach / telegraph hill)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4606737170">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4606623206"> <a href="/sfc/pet/4606623206.html" class="i" data-id="0:00Q0Q_50bkMIvyQK3"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 12</span>  <a href="/sfc/pet/4606623206.html" data-id="4606623206" class="hdrlnk">Patterdale puppies</a> </span> <span class="l2">   <span class="pnr"> <small> (sacramento)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4606623206">map</span></span></span> </span>  </span> </span> </p>
-<h4 class="ban"><span class="bantext">Mon 11 Aug</span></h4>
- <p class="row" data-pid="4614985003"> <a href="/sfc/pet/4614985003.html" class="i" data-id="0:00303_eJrL2OwtoWK"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614985003.html" data-id="4614985003" class="hdrlnk">Yorkie Puppies Male, 14 Weeks, beautiful puppies </a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4614985003">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4588950132"> <a href="/sfc/pet/4588950132.html" class="i" data-id="0:00x0x_6ehs36vUT3I"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4588950132.html" data-id="4588950132" class="hdrlnk">GORGEOUS, ALL-WHITE, BLUE EYED KITTENS!</a> </span> <span class="l2">   <span class="pnr"> <small> (San Luis Obispo)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4604978143"> <a href="/sfc/pet/4604978143.html" class="i" data-id="0:00808_2QbKYZ9bbR4"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4604978143.html" data-id="4604978143" class="hdrlnk">Authentic Brand New Gucci Dog Collar</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4604978143">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614940950"> <a href="/sfc/pet/4614940950.html" class="i" data-id="0:00Z0Z_ecgYChe85y2"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614940950.html" data-id="4614940950" class="hdrlnk">Cane corso puppies</a> </span> <span class="l2">   <span class="pnr"> <small> (Porterville)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614968412"> <a href="/sfc/pet/4614968412.html" class="i" data-id="0:00z0z_cPFrfjkLrpX"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614968412.html" data-id="4614968412" class="hdrlnk">stockton, ca Gray/tan and white Chihuahua for sale </a> </span> <span class="l2">   <span class="pnr"> <small> (pacific heights)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4606912919"> <a href="/sfc/pet/4606912919.html" class="i" data-id="0:00X0X_cA3xKEJKWUh"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4606912919.html" data-id="4606912919" class="hdrlnk">Baby Netherland Dwarf bunnies</a> </span> <span class="l2">   <span class="pnr"> <small> (SF)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4606912919">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614743161"> <a href="/sfc/pet/4614743161.html" class="i" data-id="0:00D0D_1occwCYhBOz"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614743161.html" data-id="4614743161" class="hdrlnk">Kittens, adorable tuxedo rescue kitten for adoption</a> </span> <span class="l2">   <span class="pnr"> <small> (excelsior / outer mission)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4614743161">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4588978886"> <a href="/sfc/pet/4588978886.html" class="i" data-id="0:01414_aBVid7J0FPj"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4588978886.html" data-id="4588978886" class="hdrlnk">Zebra finches</a> </span> <span class="l2">   <span class="pnr"> <small> (inner sunset / UCSF)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4610251420"> <a href="/sfc/pet/4610251420.html" class="i" data-id="0:00404_2QzMvfG8rZ3"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4610251420.html" data-id="4610251420" class="hdrlnk">Used 35 Gal Fish Tank with stand $20</a> </span> <span class="l2">   <span class="pnr"> <small> (San Francisco)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4610251420">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4605439228"> <a href="/sfc/pet/4605439228.html" class="i" data-id="0:01717_45rUFn3VpQg"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4605439228.html" data-id="4605439228" class="hdrlnk">Handfed baby red sided eclectus</a> </span> <span class="l2">   <span class="pnr"> <small> (inner sunset / UCSF)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614667732"> <a href="/sfc/pet/4614667732.html" class="i" data-id="0:00202_gkn9noUhw3"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614667732.html" data-id="4614667732" class="hdrlnk">Sweet Orange Kitty - Looking for the Purrrfect home</a> </span> <span class="l2">   <span class="pnr"> <small> (sacramento)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4611022584"> <a href="/sfc/pet/4611022584.html" class="i" data-id="0:00d0d_3EHHYd0e1Pa"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4611022584.html" data-id="4611022584" class="hdrlnk">Fiji(Kitten)</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4585317544"> <a href="/sfc/pet/4585317544.html" class="i" data-id="0:00v0v_rFHQoEbhsv"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4585317544.html" data-id="4585317544" class="hdrlnk">Elsa &amp; Merida(Kittens)</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4585329822"> <a href="/sfc/pet/4585329822.html" class="i" data-id="0:00P0P_hrYfqZGsteP"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4585329822.html" data-id="4585329822" class="hdrlnk">Pitbull Mix-Lucy</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4585321313"> <a href="/sfc/pet/4585321313.html" class="i" data-id="0:00m0m_l3nQtCQiKUQ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4585321313.html" data-id="4585321313" class="hdrlnk">Kiki-Pitbull Mix</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4596641160"> <a href="/sfc/pet/4596641160.html" class="i" data-id="0:00X0X_hXfkGHeM3Nj"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4596641160.html" data-id="4596641160" class="hdrlnk">Lily-Pitbull/Shepard Mix</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614559988"> <a href="/sfc/pet/4614559988.html" class="i" data-id="0:00404_6oE6fEBZnHK"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614559988.html" data-id="4614559988" class="hdrlnk">Toby-Miniature poodle (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614551635"> <a href="/sfc/pet/4614551635.html" class="i" data-id="0:00M0M_2jQ7hj8rc2x"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614551635.html" data-id="4614551635" class="hdrlnk">Princess Buttercup-Chihuahua/ Mixed (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614541053"> <a href="/sfc/pet/4614541053.html" class="i" data-id="0:00v0v_knvZVKuk8R7"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614541053.html" data-id="4614541053" class="hdrlnk">Cricket-Terrier Mix (Family Dog Rescue)</a> </span> <span class="l2">   <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4605418943"> <a href="/sfc/pet/4605418943.html" class="i" data-id="0:01515_i5Remh53twE"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4605418943.html" data-id="4605418943" class="hdrlnk">Dog Walker &amp; House Sitter in</a> </span> <span class="l2">   <span class="pnr"> <small> (cole valley / ashbury hts)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4605418943">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614373240"> <a href="/sfc/pet/4614373240.html" class="i" data-id="0:01616_56GJhK04lsX"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614373240.html" data-id="4614373240" class="hdrlnk">Meet Nina, Adorable pit/boxer(poss pointer) mix</a> </span> <span class="l2">   <span class="pnr"> <small> (west portal / forest hill)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4614373240">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4570577228"> <a href="/sfc/pet/4570577228.html" class="i" data-id="0:00t0t_5T4km6I0tjy"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4570577228.html" data-id="4570577228" class="hdrlnk">Dog/puppy items: Slicker brush</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4611138998"> <a href="/sfc/pet/4611138998.html" class="i" data-id="0:00V0V_lSPaifOBG00"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4611138998.html" data-id="4611138998" class="hdrlnk">Dog/puppy items: Halti</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4611138998">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4598386539"> <a href="/sfc/pet/4598386539.html" class="i" data-id="0:00n0n_7VQZe3vpTXL"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4598386539.html" data-id="4598386539" class="hdrlnk">Dog/puppy Items: Flexi Retractable Leash</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4598386539">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4611149473"> <a href="/sfc/pet/4611149473.html" class="i" data-id="0:00J0J_bjuYKFxak23"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4611149473.html" data-id="4611149473" class="hdrlnk">Hugo Boss watch and Fossil Watch</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614069002"> <a href="/sfc/pet/4614069002.html" class="i" data-id="0:00101_6VE7JckMLrc"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614069002.html" data-id="4614069002" class="hdrlnk">Adopt sweet, little Jenevive!</a> </span> <span class="l2">   <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4605388814"> <a href="/sfc/pet/4605388814.html" class="i" data-id="0:00t0t_8SF3Yzu6GXr"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4605388814.html" data-id="4605388814" class="hdrlnk">Baby Conures!</a> </span> <span class="l2">   <span class="pnr"> <small> (San Francisco)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4600190414"> <a href="/sfc/pet/4600190414.html" class="i" data-id="0:00I0I_aKZSZrnvKch"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4600190414.html" data-id="4600190414" class="hdrlnk">Blue nose 4 month old </a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4600190414">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4614012649"> <a href="/sfc/pet/4614012649.html" class="i" data-id="0:00l0l_jqh2BjcT3xN"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4614012649.html" data-id="4614012649" class="hdrlnk">World's Sweetest Dog Needs Home</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4614012649">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4602677551"> <a href="/sfc/pet/4602677551.html" class="i" data-id="0:00N0N_jZIj4SlJFA9"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4602677551.html" data-id="4602677551" class="hdrlnk">STYLIZED PET PORTRAITS BY LOCAL SF ARTIST. . .!!!</a> </span> <span class="l2">   <span class="pnr"> <small> (visitacion valley)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4602677551">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4592330626"> <a href="/sfc/pet/4592330626.html" class="i" data-id="0:01212_idziQWdJ4Em"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4592330626.html" data-id="4592330626" class="hdrlnk">FANTASTIC DOG COLLARS</a> </span> <span class="l2">   <span class="pnr"> <small> (WEBSITE)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4567827742"> <a href="/sfc/pet/4567827742.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4567827742.html" data-id="4567827742" class="hdrlnk">Blowout Pet Supplies! Upto 60% Off Retail Prices.</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> </span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613982875"> <a href="/sfc/pet/4613982875.html" class="i" data-id="0:00q0q_3BVKkFFBJcZ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4613982875.html" data-id="4613982875" class="hdrlnk">LOVELY Cats at shelter waiting for that special someone!!</a> </span> <span class="l2">   <span class="pnr"> <small> (Manteca Animal Shelter)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4613982875">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4595738452"> <a href="/sfc/pet/4595738452.html" class="i" data-id="0:00s0s_i1YK3UI9xr7"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4595738452.html" data-id="4595738452" class="hdrlnk">=^..^= Isabel and Perlita =^..^=</a> </span> <span class="l2">   <span class="pnr"> <small> (inner richmond)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4595738452">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613708573"> <a href="/sfc/pet/4613708573.html" class="i" data-id="0:00303_luqitwxLvQg"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4613708573.html" data-id="4613708573" class="hdrlnk">Reliable Dog Walker or Pet Sitter,With (EXCELLENT REFERENCES)</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4574238620"> <a href="/sfc/pet/4574238620.html" class="i" data-id="0:00v0v_cHxKEL4k82k"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4574238620.html" data-id="4574238620" class="hdrlnk">Do You Love Animals?</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4574238620">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613561808"> <a href="/sfc/pet/4613561808.html" class="i" data-id="0:00p0p_8fVKweamEZ6"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 11</span>  <a href="/sfc/pet/4613561808.html" data-id="4613561808" class="hdrlnk">Albino cockatiel</a> </span> <span class="l2">   <span class="pnr"> <small> (inner sunset / UCSF)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
-<h4 class="ban"><span class="bantext">Sun 10 Aug</span></h4>
- <p class="row" data-pid="4613297135"> <a href="/sfc/pet/4613297135.html" class="i" data-id="0:00S0S_dq1s4IpSXpo"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4613297135.html" data-id="4613297135" class="hdrlnk">Adopt a cute doxie mix!</a> </span> <span class="l2">   <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4613297135">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613291505"> <a href="/sfc/pet/4613291505.html" class="i" data-id="0:00a0a_jAZ2hcEhNkh"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4613291505.html" data-id="4613291505" class="hdrlnk">Senior boxer mix available for adoption</a> </span> <span class="l2">   <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4613291505">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613291266"> <a href="/sfc/pet/4613291266.html" class="i" data-id="0:00V0V_bE2CLpRVtBT"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4613291266.html" data-id="4613291266" class="hdrlnk">Handsome Senior Choco Lab</a> </span> <span class="l2">   <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4613291266">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613273021"> <a href="/sfc/pet/4613273021.html" class="i" data-id="0:00808_fD8wh9VzGv6"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4613273021.html" data-id="4613273021" class="hdrlnk">2 Female Chihuahua Mix Pups, Need to be Rehomed</a> </span> <span class="l2">   <span class="pnr"> <small> (SF)</small> <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613266799"> <a href="/sfc/pet/4613266799.html" class="i" data-id="0:00d0d_dfBsEi78GcS"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4613266799.html" data-id="4613266799" class="hdrlnk">2-year old, quiet Papillon mix available for adoption (PapHaven Rescue</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic</span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613220799"> <a href="/sfc/pet/4613220799.html" class="i" data-id="0:00O0O_6HLMkfgI76q"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4613220799.html" data-id="4613220799" class="hdrlnk">Adopt Hobie, a stunning Staffy!</a> </span> <span class="l2">   <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4613220799">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613229366"> <a href="/sfc/pet/4613229366.html" class="i" data-id="0:00o0o_2YTEc0Pe625"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4613229366.html" data-id="4613229366" class="hdrlnk">Mourning dog lovers' rent fund</a> </span> <span class="l2">   <span class="pnr"> <small> (financial district)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4613229366">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4613221742"> <a href="/sfc/pet/4613221742.html" class="i" data-id="0:00D0D_6FanEcA2Vqu"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4613221742.html" data-id="4613221742" class="hdrlnk">Urgent &amp; Loving Foster Homes Needed</a> </span> <span class="l2">   <span class="pnr">  <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4613221742">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4603631083"> <a href="/sfc/pet/4603631083.html" class="i" data-id="0:00g0g_fSiU70AJwad"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4603631083.html" data-id="4603631083" class="hdrlnk">Adopt Ray..pitt/pointer mix!</a> </span> <span class="l2">   <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4603631083">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4603630764"> <a href="/sfc/pet/4603630764.html" class="i" data-id="0:00H0H_8nuxblH3qns"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4603630764.html" data-id="4603630764" class="hdrlnk">Adopt Teddy, a cute rottie mix</a> </span> <span class="l2">   <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4603630764">map</span></span></span> </span>  </span> </span> </p>
- <p class="row" data-pid="4603643293"> <a href="/sfc/pet/4603643293.html" class="i" data-id="0:00303_9kuYDu66OGj"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <span class="date">Aug 10</span>  <a href="/sfc/pet/4603643293.html" data-id="4603643293" class="hdrlnk">Adopt Jax, a Sweet Beagle mix</a> </span> <span class="l2">   <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic&nbsp;<span class="maptag" data-pid="4603643293">map</span></span></span> </span>  </span> </span> </p>
+                    
+                </section>
+              </section>
 
-                    <div id="mapcontainer" data-arealat="37.500000" data-arealon="-122.250000">
+              
+              
+
+              
+              <p class="row" data-pid="5068768196"> <a href="/sfc/pet/5068768196.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-11 00:55" title="Thu 11 Jun 12:55:52 AM (-652 seconds ago)">Jun 11</time> <a href="/sfc/pet/5068768196.html" data-id="5068768196" class="hdrlnk">please don't post "free animals"/por favor no ponga "animales gratis"</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> <span class="maptag" data-pid="5068768196">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068768196">x</a><a class="unbanish linklike" title="unhide" data-pid="5068768196">undo</a>]</span> </span> </p><p class="row" data-pid="5068745033"> <a href="/sfc/pet/5068745033.html" class="i" data-ids="0:00v0v_khPT60EA9fl"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 22:01" title="Wed 10 Jun 10:01:23 PM (4 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068745033.html" data-id="5068745033" class="hdrlnk">Chinchillas Looking for Home</a> </span> <span class="l2"> <span class="pnr"> <small> (sunset / parkside)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5068745033">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068745033">x</a><a class="unbanish linklike" title="unhide" data-pid="5068745033">undo</a>]</span> </span> </p><p class="row" data-pid="5063122247"> <a href="/sfc/pet/5063122247.html" class="i" data-ids="0:00g0g_1KUOgJY6l5m,0:00v0v_6HbUud5OI6z"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 21:58" title="Wed 10 Jun 09:58:02 PM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5063122247.html" data-id="5063122247" class="hdrlnk">Spirit: gorgeous girl kitten</a> </span> <span class="l2"> <span class="pnr"> <small> (Wonder Cat Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5063122247">x</a><a class="unbanish linklike" title="unhide" data-pid="5063122247">undo</a>]</span> </span> </p><p class="row" data-pid="5068738310"> <a href="/sfc/pet/5068738310.html" class="i" data-ids="0:00o0o_4fkxvD3ARQ4,0:00Z0Z_dLYWE0e20VV"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 21:51" title="Wed 10 Jun 09:51:20 PM (-353 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068738310.html" data-id="5068738310" class="hdrlnk">Exuberant Akita / Border Collie for Rehome</a> </span> <span class="l2"> <span class="pnr"> <small> (sunset / parkside)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068738310">x</a><a class="unbanish linklike" title="unhide" data-pid="5068738310">undo</a>]</span> </span> </p><p class="row" data-pid="5068692000"> <a href="/sfc/pet/5068692000.html" class="i" data-ids="0:00U0U_etgOp8UpmnP,0:00q0q_bhT54a1PXZh,0:00Y0Y_cuAcQfxyr23,0:01212_1iCoRTsrVd9,0:00I0I_k34ORCumom1,0:00A0A_5cXMsZkiKgO,0:00V0V_6LEsTaO5cbZ,0:00808_3cRmvOSP8um,0:00k0k_eBDvOloB35Q,0:00404_fFxyLQxmbqW,0:01010_i2ervm1ITi6,0:00101_kMqM0Bb1w2H"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 21:16" title="Wed 10 Jun 09:16:00 PM (-1972 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068692000.html" data-id="5068692000" class="hdrlnk">AKC Imperial Shih Tzu Puppies</a> </span> <span class="l2"> <span class="pnr"> <small> (Natomas)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068692000">x</a><a class="unbanish linklike" title="unhide" data-pid="5068692000">undo</a>]</span> </span> </p><p class="row" data-pid="5068645432"> <a href="/sfc/pet/5068645432.html" class="i" data-ids="0:00d0d_ieOlPCHJxA4,0:00m0m_4QGnaBCDICy,0:00v0v_2XUsL3G3Ley,0:00F0F_84m9GLo8BXR,0:01414_9aQUwMzl93o,0:00I0I_ffKk52D0knB,0:00o0o_bjwtYBckKwy,0:00202_1PimcwjLaCh,0:00S0S_eidMyaphMsH"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 19:53" title="Wed 10 Jun 07:53:09 PM (3 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068645432.html" data-id="5068645432" class="hdrlnk">Amazon blue front headed parrot + cage</a> </span> <span class="l2"> <span class="pnr"> <small> (downtown / civic / van ness)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5068645432">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068645432">x</a><a class="unbanish linklike" title="unhide" data-pid="5068645432">undo</a>]</span> </span> </p><p class="row" data-pid="5068625606"> <a href="/sfc/pet/5068625606.html" class="i" data-ids="0:00x0x_fROTFzqtb9M"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 19:34" title="Wed 10 Jun 07:34:14 PM (3 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068625606.html" data-id="5068625606" class="hdrlnk">KITTENS, KITTENS, KITTENS</a> </span> <span class="l2"> <span class="pnr"> <small> (San Francisco)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068625606">x</a><a class="unbanish linklike" title="unhide" data-pid="5068625606">undo</a>]</span> </span> </p><p class="row" data-pid="5068591612"> <a href="/sfc/pet/5068591612.html" class="i" data-ids="0:00B0B_jYlnJHWE4oq,0:00909_lGXY8X8ZRKv,0:00g0g_jbKgK6sBu0H,0:00L0L_2DsdMy5xJwK"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 19:03" title="Wed 10 Jun 07:03:07 PM (4 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068591612.html" data-id="5068591612" class="hdrlnk">Vibrant, Hand-Painted Pet Portraits</a> </span> <span class="l2"> <span class="pnr"> <small> (nob hill)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068591612">x</a><a class="unbanish linklike" title="unhide" data-pid="5068591612">undo</a>]</span> </span> </p><p class="row" data-pid="5042406274"> <a href="/sfc/pet/5042406274.html" class="i" data-ids="0:01515_i5Remh53twE"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 18:55" title="Wed 10 Jun 06:55:22 PM (-293 seconds ago)">Jun 10</time> <a href="/sfc/pet/5042406274.html" data-id="5042406274" class="hdrlnk">Dog Walker &amp; House Sitter in</a> </span> <span class="l2"> <span class="pnr"> <small> (cole valley / ashbury hts)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5042406274">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5042406274">x</a><a class="unbanish linklike" title="unhide" data-pid="5042406274">undo</a>]</span> </span> </p><p class="row" data-pid="5068572264"> <a href="/sfc/pet/5068572264.html" class="i" data-ids="0:00i0i_a6qzz7BbWde,0:00404_a4e3FnUxHgx"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 18:46" title="Wed 10 Jun 06:46:14 PM (3 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068572264.html" data-id="5068572264" class="hdrlnk">REWARD $2,000.00 LOST Congo African Gray Parrot Missing since 4-2-15</a> </span> <span class="l2"> <span class="pnr"> <small> (Arden Arcade/Carmichael)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068572264">x</a><a class="unbanish linklike" title="unhide" data-pid="5068572264">undo</a>]</span> </span> </p><p class="row" data-pid="5052050272"> <a href="/sfc/pet/5052050272.html" class="i" data-ids="0:00202_l0h95t4VvXv,0:00z0z_f3JUex3IvCA"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 16:43" title="Wed 10 Jun 04:43:48 PM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5052050272.html" data-id="5052050272" class="hdrlnk">Adopt Zoolander, pom/spaniel mix</a> </span> <span class="l2"> <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5052050272">x</a><a class="unbanish linklike" title="unhide" data-pid="5052050272">undo</a>]</span> </span> </p><p class="row" data-pid="5061474788" data-repost-of="4856964413"> <a href="/sfc/pet/5061474788.html" class="i" data-ids="0:00X0X_kduNmF8ZkFe,0:00404_iDXqJqotdoH,0:00404_bBgYOLb5Kyb,0:00i0i_6c2rgF8O68N,0:00R0R_h19a5ZZfDmM,0:00p0p_nPq1O4yU2,0:00U0U_6jRQV6xf6qu"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 15:50" title="Wed 10 Jun 03:50:20 PM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5061474788.html" data-id="5061474788" class="hdrlnk">New in box pet dog cat air plane travel soft crate carrier</a> </span> <span class="l2"> <span class="pnr"> <small> (richmond / seacliff)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5061474788">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5061474788">x</a><a class="unbanish linklike" title="unhide" data-pid="5061474788">undo</a>]</span> </span> </p><p class="row" data-pid="5068315285" data-repost-of="4964861710"> <a href="/sfc/pet/5068315285.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 15:28" title="Wed 10 Jun 03:28:18 PM (3 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068315285.html" data-id="5068315285" class="hdrlnk">Translating breeder ads</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> </span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068315285">x</a><a class="unbanish linklike" title="unhide" data-pid="5068315285">undo</a>]</span> </span> </p><p class="row" data-pid="5060470563"> <a href="/sfc/pet/5060470563.html" class="i" data-ids="0:00p0p_6tWEfshKyf3,0:00E0E_61fBQJFw04K,0:01313_jlzeKW9kFZu,0:00909_gZV101YZ7YX"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 15:21" title="Wed 10 Jun 03:21:55 PM (-92 seconds ago)">Jun 10</time> <a href="/sfc/pet/5060470563.html" data-id="5060470563" class="hdrlnk">reptiles for sale/trade</a> </span> <span class="l2"> <span class="pnr"> <small> (excelsior / outer mission)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5060470563">x</a><a class="unbanish linklike" title="unhide" data-pid="5060470563">undo</a>]</span> </span> </p><p class="row" data-pid="5058693157" data-repost-of="4897149009"> <a href="/sfc/pet/5058693157.html" class="i" data-ids="0:00N0N_lQHAWMjYzVy,0:00z0z_7QxOTlYazew"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 14:06" title="Wed 10 Jun 02:06:38 PM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5058693157.html" data-id="5058693157" class="hdrlnk">Adopt or Find a Home for Your Pet!!</a> </span> <span class="l2"> <span class="pnr"> <small> (downtown / civic / van ness)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5058693157">x</a><a class="unbanish linklike" title="unhide" data-pid="5058693157">undo</a>]</span> </span> </p><p class="row" data-pid="5040996179"> <a href="/sfc/pet/5040996179.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 13:13" title="Wed 10 Jun 01:13:54 PM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5040996179.html" data-id="5040996179" class="hdrlnk">The Finder Can Find Your Missing Pet</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> </span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5040996179">x</a><a class="unbanish linklike" title="unhide" data-pid="5040996179">undo</a>]</span> </span> </p><p class="row" data-pid="5068050782" data-repost-of="5034659004"> <a href="/sfc/pet/5068050782.html" class="i" data-ids="0:00y0y_2JyO6ya9XNF,0:00v0v_2snk7HL4Fh9,0:00f0f_6AFecMBB8TR"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 13:05" title="Wed 10 Jun 01:05:53 PM (-892 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068050782.html" data-id="5068050782" class="hdrlnk">Please read this dogs story! Rocket Dog needs to find this pup a home</a> </span> <span class="l2"> <span class="pnr"> <small> (SOMA / south beach)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068050782">x</a><a class="unbanish linklike" title="unhide" data-pid="5068050782">undo</a>]</span> </span> </p><p class="row" data-pid="5068048617"> <a href="/sfc/pet/5068048617.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 12:49" title="Wed 10 Jun 12:49:47 PM (4 seconds ago)">Jun 10</time> <a href="/sfc/pet/5068048617.html" data-id="5068048617" class="hdrlnk">Small adopted rescue dog needs better home</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> </span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5068048617">x</a><a class="unbanish linklike" title="unhide" data-pid="5068048617">undo</a>]</span> </span> </p><p class="row" data-pid="5051244986" data-repost-of="4997632226"> <a href="/sfc/pet/5051244986.html" class="i" data-ids="0:00404_fv6GM88COEy,0:00r0r_cld0nheUHZc"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 12:45" title="Wed 10 Jun 12:45:12 PM (-293 seconds ago)">Jun 10</time> <a href="/sfc/pet/5051244986.html" data-id="5051244986" class="hdrlnk">Sweet bonded senior chi pair need a family!</a> </span> <span class="l2"> <span class="pnr"> <small> (Rocket Dog Rescue)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5051244986">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5051244986">x</a><a class="unbanish linklike" title="unhide" data-pid="5051244986">undo</a>]</span> </span> </p><p class="row" data-pid="5067981806" data-repost-of="5011400138"> <a href="/sfc/pet/5067981806.html" class="i" data-ids="0:00V0V_gqE8qVQPSvE,0:00B0B_dG5rCWRyuAN"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 12:36" title="Wed 10 Jun 12:36:24 PM (-1312 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067981806.html" data-id="5067981806" class="hdrlnk">Neutered Male mini doberman mix rescue puppy for adoption</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067981806">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067981806">x</a><a class="unbanish linklike" title="unhide" data-pid="5067981806">undo</a>]</span> </span> </p><p class="row" data-pid="5060583916"> <a href="/sfc/pet/5060583916.html" class="i" data-ids="0:00R0R_fr7U6u79POK,0:00m0m_lk5PQ4pgO1d,0:00U0U_2q8nEtz61OL,0:00V0V_cM3kNYkwdiQ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 11:59" title="Wed 10 Jun 11:59:11 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5060583916.html" data-id="5060583916" class="hdrlnk">Female German Shepherd X Puppy</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5060583916">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5060583916">x</a><a class="unbanish linklike" title="unhide" data-pid="5060583916">undo</a>]</span> </span> </p><p class="row" data-pid="5067941491"> <a href="/sfc/pet/5067941491.html" class="i" data-ids="0:01414_gNkqg9WLrbA,0:00b0b_kExmyT60qx3,0:00909_8EQAhhiCrhs,0:01717_6hXxLvMoQ5t,0:00Y0Y_3PEqiMEeyvW,0:00K0K_a8FJJrrj0nb,0:00s0s_dLYgwp7KChB,0:00a0a_josCV6UUPNE,0:00w0w_gDTsR48x0js,0:00N0N_5iBcTXQN8bJ,0:00W0W_hCPRvCvJHGb"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 11:57" title="Wed 10 Jun 11:57:58 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067941491.html" data-id="5067941491" class="hdrlnk">CATS! KITTENS! oh my! Come Adopt one today :)</a> </span> <span class="l2"> <span class="pnr"> <small> (Manteca Animal Shelter)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067941491">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067941491">x</a><a class="unbanish linklike" title="unhide" data-pid="5067941491">undo</a>]</span> </span> </p><p class="row" data-pid="5067840483"> <a href="/sfc/pet/5067840483.html" class="i" data-ids="0:00Z0Z_gGRiLWRL3oL"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 11:16" title="Wed 10 Jun 11:16:52 AM (-952 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067840483.html" data-id="5067840483" class="hdrlnk">blue nose puppy</a> </span> <span class="l2"> <span class="pnr"> <small> (nob hill)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067840483">x</a><a class="unbanish linklike" title="unhide" data-pid="5067840483">undo</a>]</span> </span> </p><p class="row" data-pid="5067830749" data-repost-of="5054909592"> <a href="/sfc/pet/5067830749.html" class="i" data-ids="0:00h0h_fBSYr6onfGF"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 11:11" title="Wed 10 Jun 11:11:54 AM (-952 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067830749.html" data-id="5067830749" class="hdrlnk">1 to 1 dog walking with a Wag! dog walker</a> </span> <span class="l2"> <span class="pnr"> <small> (sunset / parkside)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067830749">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067830749">x</a><a class="unbanish linklike" title="unhide" data-pid="5067830749">undo</a>]</span> </span> </p><p class="row" data-pid="5067821893" data-repost-of="5013609377"> <a href="/sfc/pet/5067821893.html" class="i" data-ids="0:00l0l_9pYGZVIdVqL,0:00505_kJDBNw5OMOL,0:00U0U_inwKnYe2Kxe,0:00f0f_fPCWxvOQh6O"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 11:02" title="Wed 10 Jun 11:02:27 AM (-652 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067821893.html" data-id="5067821893" class="hdrlnk">Adopt Emerald: Morkie mix, 4 mo old, Female</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067821893">x</a><a class="unbanish linklike" title="unhide" data-pid="5067821893">undo</a>]</span> </span> </p><p class="row" data-pid="5067825804" data-repost-of="4968471414"> <a href="/sfc/pet/5067825804.html" class="i" data-ids="0:00x0x_dm0m051A8g2"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:59" title="Wed 10 Jun 10:59:27 AM (-353 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067825804.html" data-id="5067825804" class="hdrlnk">Priscilla: German Shepherd Dog x Basenji 3 years old - Female</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067825804">x</a><a class="unbanish linklike" title="unhide" data-pid="5067825804">undo</a>]</span> </span> </p><p class="row" data-pid="5053775750" data-repost-of="4983952687"> <a href="/sfc/pet/5053775750.html" class="i" data-ids="0:00000_bpK8qA5bAB3"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:55" title="Wed 10 Jun 10:55:00 AM (-293 seconds ago)">Jun 10</time> <a href="/sfc/pet/5053775750.html" data-id="5053775750" class="hdrlnk">Need pet sitter</a> </span> <span class="l2"> <span class="pnr"> <small> (sunset / parkside)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5053775750">x</a><a class="unbanish linklike" title="unhide" data-pid="5053775750">undo</a>]</span> </span> </p><p class="row" data-pid="5049116817" data-repost-of="4983952687"> <a href="/sfc/pet/5049116817.html" class="i" data-ids="0:00000_bpK8qA5bAB3"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:54" title="Wed 10 Jun 10:54:55 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5049116817.html" data-id="5049116817" class="hdrlnk">Need pet sitter</a> </span> <span class="l2"> <span class="pnr"> <small> (sunset / parkside)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5049116817">x</a><a class="unbanish linklike" title="unhide" data-pid="5049116817">undo</a>]</span> </span> </p><p class="row" data-pid="5067824590" data-repost-of="4968500511"> <a href="/sfc/pet/5067824590.html" class="i" data-ids="0:01010_b2CMtYMkUXx,0:01313_5rXFCzLgM16,0:00d0d_9inBHPqPmwz,0:00808_byMBoobHhcx"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:52" title="Wed 10 Jun 10:52:55 AM (3 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067824590.html" data-id="5067824590" class="hdrlnk">Adopt Boo: Burmese Cat, Adult - Medium coat - Female</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067824590">x</a><a class="unbanish linklike" title="unhide" data-pid="5067824590">undo</a>]</span> </span> </p><p class="row" data-pid="5055820146"> <a href="/sfc/pet/5055820146.html" class="i" data-ids="0:00303_9ec7zp7hT9n,0:00o0o_faDbTJhsp16,0:00H0H_69jvoeraNQk,0:00M0M_fB7TtmbKclS,0:00k0k_ljeIEvGTyIn"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:52" title="Wed 10 Jun 10:52:11 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5055820146.html" data-id="5055820146" class="hdrlnk">Adopt Lumin: Toy Fox Terrier, 2 yrs, Male</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5055820146">x</a><a class="unbanish linklike" title="unhide" data-pid="5055820146">undo</a>]</span> </span> </p><p class="row" data-pid="5048950827"> <a href="/sfc/pet/5048950827.html" class="i" data-ids="0:00u0u_3unQYZcSQXh,0:00d0d_2ujr6jaSl0i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:51" title="Wed 10 Jun 10:51:14 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5048950827.html" data-id="5048950827" class="hdrlnk">Adopt Duke: Labrador Retriever 7 years old - Male</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5048950827">x</a><a class="unbanish linklike" title="unhide" data-pid="5048950827">undo</a>]</span> </span> </p><p class="row" data-pid="5048987352"> <a href="/sfc/pet/5048987352.html" class="i" data-ids="0:01313_fbkZY9NfeOC,0:00I0I_cL1nE2dOUkM,0:01717_7TBAHuk52SS,0:00P0P_3QH3cEqEerd"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:49" title="Wed 10 Jun 10:49:55 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5048987352.html" data-id="5048987352" class="hdrlnk">Adopt Luke: Labrador Retriever 6 years old - Male</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5048987352">x</a><a class="unbanish linklike" title="unhide" data-pid="5048987352">undo</a>]</span> </span> </p><p class="row" data-pid="5035349636"> <a href="/sfc/pet/5035349636.html" class="i" data-ids="0:00i0i_fdSe1vxBdkz,0:01313_19D7OslAL5c,0:00v0v_7ghgDlpYYa0,0:00d0d_2fpy1qBzKyu"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:47" title="Wed 10 Jun 10:47:05 AM (-293 seconds ago)">Jun 10</time> <a href="/sfc/pet/5035349636.html" data-id="5035349636" class="hdrlnk">Adopt Sophie: Domestic Medium Hair Cat, 3 years old, Female</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5035349636">x</a><a class="unbanish linklike" title="unhide" data-pid="5035349636">undo</a>]</span> </span> </p><p class="row" data-pid="5039814316"> <a href="/sfc/pet/5039814316.html" class="i" data-ids="0:00D0D_55zNZkBRoQH,0:00c0c_9LVzqYaR8Tt,0:00K0K_e0kgsKwqmBz,0:00E0E_aGqbXghcpXl"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:46" title="Wed 10 Jun 10:46:55 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5039814316.html" data-id="5039814316" class="hdrlnk">Sampson: Labrador Retriever x Yellow Labrador Retriever 5 years old -</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5039814316">x</a><a class="unbanish linklike" title="unhide" data-pid="5039814316">undo</a>]</span> </span> </p><p class="row" data-pid="5035364335"> <a href="/sfc/pet/5035364335.html" class="i" data-ids="0:00A0A_dfINFANdmGS,0:00D0D_3jhoKFUqHfx,0:00101_6lNvIUdBJvr,0:00O0O_cgAJqbIzj3R"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:46" title="Wed 10 Jun 10:46:05 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5035364335.html" data-id="5035364335" class="hdrlnk">Jetta: Black Lab, 2 yrs, Female</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5035364335">x</a><a class="unbanish linklike" title="unhide" data-pid="5035364335">undo</a>]</span> </span> </p><p class="row" data-pid="5035380893"> <a href="/sfc/pet/5035380893.html" class="i" data-ids="0:00e0e_wlUM16hbfK,0:00U0U_bgMh1e0wdZJ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:45" title="Wed 10 Jun 10:45:58 AM (-293 seconds ago)">Jun 10</time> <a href="/sfc/pet/5035380893.html" data-id="5035380893" class="hdrlnk">Oggy: Domestic Short Hair Cat - Male Kitten</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5035380893">x</a><a class="unbanish linklike" title="unhide" data-pid="5035380893">undo</a>]</span> </span> </p><p class="row" data-pid="5046186610"> <a href="/sfc/pet/5046186610.html" class="i" data-ids="0:00f0f_b414AHb9TPv,0:00101_9R5eSLh7RBD,0:00Q0Q_7xkDk3h3s3e"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:45" title="Wed 10 Jun 10:45:51 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5046186610.html" data-id="5046186610" class="hdrlnk">Maya: Shih Tzu 5 years old - Medium coat - Female</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5046186610">x</a><a class="unbanish linklike" title="unhide" data-pid="5046186610">undo</a>]</span> </span> </p><p class="row" data-pid="5035382273"> <a href="/sfc/pet/5035382273.html" class="i" data-ids="0:00P0P_9w5N8rViuMG,0:01414_gsVZcWmb5I2,0:00X0X_7VPklBl6MZw,0:01212_6c2BWokdLe6"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:45" title="Wed 10 Jun 10:45:40 AM (-293 seconds ago)">Jun 10</time> <a href="/sfc/pet/5035382273.html" data-id="5035382273" class="hdrlnk">Onyx: Siamese x Domestic Short Hair Cat - Male Kitten</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5035382273">x</a><a class="unbanish linklike" title="unhide" data-pid="5035382273">undo</a>]</span> </span> </p><p class="row" data-pid="5067789392"> <a href="/sfc/pet/5067789392.html" class="i" data-ids="0:00n0n_bKqoWzEwcEm,0:00i0i_6QJB35A2Mwq,0:00909_5FDmW8iJ9HQ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:35" title="Wed 10 Jun 10:35:12 AM (4 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067789392.html" data-id="5067789392" class="hdrlnk">Rose - Beautiful long hair chi!</a> </span> <span class="l2"> <span class="pnr"> <small> (SF Wonder Dog Rescue)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067789392">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067789392">x</a><a class="unbanish linklike" title="unhide" data-pid="5067789392">undo</a>]</span> </span> </p><p class="row" data-pid="5067777703"> <a href="/sfc/pet/5067777703.html" class="i" data-ids="0:00Z0Z_e1GvScr8yyh,0:00e0e_bj8IF9waFjA,0:00909_5FDmW8iJ9HQ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:29" title="Wed 10 Jun 10:29:23 AM (3 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067777703.html" data-id="5067777703" class="hdrlnk">DOLORES: BEUTIFUL CORGI MIX!</a> </span> <span class="l2"> <span class="pnr"> <small> (WONDER DOG RESCUE)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067777703">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067777703">x</a><a class="unbanish linklike" title="unhide" data-pid="5067777703">undo</a>]</span> </span> </p><p class="row" data-pid="5067767320"> <a href="/sfc/pet/5067767320.html" class="i" data-ids="0:00A0A_cfcftXWLm88,0:01111_1W4HykOKd1f,0:00909_5FDmW8iJ9HQ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:24" title="Wed 10 Jun 10:24:19 AM (4 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067767320.html" data-id="5067767320" class="hdrlnk">SMILEY - SUPER CUTE, SMALL &amp; SCRUFFY!</a> </span> <span class="l2"> <span class="pnr"> <small> (WONDER DOG RESCUE)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067767320">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067767320">x</a><a class="unbanish linklike" title="unhide" data-pid="5067767320">undo</a>]</span> </span> </p><p class="row" data-pid="5067751231"> <a href="/sfc/pet/5067751231.html" class="i" data-ids="0:00R0R_eMLraKBdDdW,0:00z0z_iY8ORzy8MgU,0:00909_5FDmW8iJ9HQ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:16" title="Wed 10 Jun 10:16:19 AM (4 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067751231.html" data-id="5067751231" class="hdrlnk">GRACIE HAS BEEN WAITING AN AWFUL LONG TIME FOR A HOME OF HER OWN!</a> </span> <span class="l2"> <span class="pnr"> <small> (WONDER DOG RESCUE)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067751231">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067751231">x</a><a class="unbanish linklike" title="unhide" data-pid="5067751231">undo</a>]</span> </span> </p><p class="row" data-pid="5067728871" data-repost-of="5035377369"> <a href="/sfc/pet/5067728871.html" class="i" data-ids="0:01616_6zsXBvmmdH3"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:12" title="Wed 10 Jun 10:12:12 AM (-413 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067728871.html" data-id="5067728871" class="hdrlnk">Dane: Siamese x Domestic Cat, 12 weeks old, Male</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067728871">x</a><a class="unbanish linklike" title="unhide" data-pid="5067728871">undo</a>]</span> </span> </p><p class="row" data-pid="5035358750"> <a href="/sfc/pet/5035358750.html" class="i" data-ids="0:00Z0Z_itNv69Qzgu3,0:00u0u_5adKWrgq1Ui,0:00I0I_l7E8aGQgl5r,0:00X0X_1CcxV7vMqxI"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:12" title="Wed 10 Jun 10:12:04 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5035358750.html" data-id="5035358750" class="hdrlnk">Easter: Maltese-Westie mix, 1 yr, Male</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5035358750">x</a><a class="unbanish linklike" title="unhide" data-pid="5035358750">undo</a>]</span> </span> </p><p class="row" data-pid="5035363101"> <a href="/sfc/pet/5035363101.html" class="i" data-ids="0:01515_3Sty5pd6gcK,0:00C0C_bMisFPZ5Fuk,0:00M0M_kvIk6vOgXta,0:00505_i6paxMIErGg"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:10" title="Wed 10 Jun 10:10:36 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5035363101.html" data-id="5035363101" class="hdrlnk">Hershey: Australian Shepherd/Australian Cattle/Blue Heeler, 6yrs, Male</a> </span> <span class="l2"> <span class="pnr"> <small> (DPS Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5035363101">x</a><a class="unbanish linklike" title="unhide" data-pid="5035363101">undo</a>]</span> </span> </p><p class="row" data-pid="5067738213"> <a href="/sfc/pet/5067738213.html" class="i" data-ids="0:00W0W_hQfvoyzip6x,0:00Z0Z_dPs3ggNBBwQ,0:00909_5FDmW8iJ9HQ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 10:09" title="Wed 10 Jun 10:09:54 AM (3 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067738213.html" data-id="5067738213" class="hdrlnk">Faith - Beautiful little Peke-A-Chi!</a> </span> <span class="l2"> <span class="pnr"> <small> (SF Wonder Dog Rescue)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067738213">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067738213">x</a><a class="unbanish linklike" title="unhide" data-pid="5067738213">undo</a>]</span> </span> </p><p class="row" data-pid="5037340719" data-repost-of="4976082611"> <a href="/sfc/pet/5037340719.html" class="i" data-ids="0:00F0F_5zuIlh8r6d7"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 09:44" title="Wed 10 Jun 09:44:14 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5037340719.html" data-id="5037340719" class="hdrlnk">African Grey Parrot Lost on April 12. REWARD $2,000.00</a> </span> <span class="l2"> <span class="pnr"> <small> (ingleside / SFSU / CCSF)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5037340719">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5037340719">x</a><a class="unbanish linklike" title="unhide" data-pid="5037340719">undo</a>]</span> </span> </p><p class="row" data-pid="5067597349"> <a href="/sfc/pet/5067597349.html" class="i" data-ids="0:00S0S_9rUuOOsM7V6,0:00l0l_6ASwJLWFmGj"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 09:08" title="Wed 10 Jun 09:08:32 AM (-473 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067597349.html" data-id="5067597349" class="hdrlnk">Real mirco tea cup chihuahua</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067597349">x</a><a class="unbanish linklike" title="unhide" data-pid="5067597349">undo</a>]</span> </span> </p><p class="row" data-pid="5067612580"> <a href="/sfc/pet/5067612580.html" class="i" data-ids="0:00S0S_dC5lAyrocww,0:00t0t_lJG5X1Dd4Rw"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 09:08" title="Wed 10 Jun 09:08:05 AM (4 minutes ago)">Jun 10</time> <a href="/sfc/pet/5067612580.html" data-id="5067612580" class="hdrlnk">Meet Mavrix! One lovable Rocket Dog!</a> </span> <span class="l2"> <span class="pnr"> <small> (Pet Food Express- Belmont)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067612580">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067612580">x</a><a class="unbanish linklike" title="unhide" data-pid="5067612580">undo</a>]</span> </span> </p><p class="row" data-pid="5048666784" data-repost-of="4881825847"> <a href="/sfc/pet/5048666784.html" class="i" data-ids="0:00f0f_15He5AtTa7b,0:00k0k_ckzL8f8IkWo,0:00M0M_gzWiPDzd4bI,0:00202_e2O7WWBdrmq,0:00K0K_a3gMtsKsCcd,0:00p0p_kMAUH4a3JSa,0:01717_fP9gF2OjjIT,0:00Z0Z_2Z9LQANdXWx,0:00p0p_6Xvzucq645I,0:00c0c_PdfgAkJMhi,0:00U0U_1O6j2oeFz1A,0:00F0F_bzzlZ1bQKfl,0:00T0T_4K33iM1lVZl"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 08:53" title="Wed 10 Jun 08:53:14 AM (-293 seconds ago)">Jun 10</time> <a href="/sfc/pet/5048666784.html" data-id="5048666784" class="hdrlnk">Calling All Large Dog Owners</a> </span> <span class="l2"> <span class="pnr"> <small> (California)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5048666784">x</a><a class="unbanish linklike" title="unhide" data-pid="5048666784">undo</a>]</span> </span> </p><p class="row" data-pid="5067524566"> <a href="/sfc/pet/5067524566.html" class="i" data-ids="0:00D0D_4LvsiQ8ey9U,0:00g0g_dBQSn5rxHbu,0:00x0x_dZDqF5g1pUB,0:00P0P_dPGSt2JXnbS"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 08:24" title="Wed 10 Jun 08:24:24 AM (3 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067524566.html" data-id="5067524566" class="hdrlnk">English bulldog puppies (RE-HOMING FEE OF $300 APPLIES.) (CLIFTON |)</a> </span> <span class="l2"> <span class="pnr"> <small> (AUSTIN)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067524566">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067524566">x</a><a class="unbanish linklike" title="unhide" data-pid="5067524566">undo</a>]</span> </span> </p><p class="row" data-pid="5060683446" data-repost-of="4943892210"> <a href="/sfc/pet/5060683446.html" class="i" data-ids="0:00d0d_87jsXvd97q8,0:00C0C_9eYk87IZiFc,0:00S0S_2yN1R03bMjm"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 08:20" title="Wed 10 Jun 08:20:02 AM (-293 seconds ago)">Jun 10</time> <a href="/sfc/pet/5060683446.html" data-id="5060683446" class="hdrlnk">Handsome Sullivan ~Hound/Pit Mix~</a> </span> <span class="l2"> <span class="pnr"> <small> (Looking for some puppy love?)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5060683446">x</a><a class="unbanish linklike" title="unhide" data-pid="5060683446">undo</a>]</span> </span> </p><p class="row" data-pid="5060683890" data-repost-of="4908974142"> <a href="/sfc/pet/5060683890.html" class="i" data-ids="0:00X0X_lOHkZk9ict4,0:01111_cZdXDupFSDK"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 08:20" title="Wed 10 Jun 08:20:01 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5060683890.html" data-id="5060683890" class="hdrlnk">Pixie **Adorable 7 month old!** chi-corgi</a> </span> <span class="l2"> <span class="pnr"> <small> (Adopt!)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5060683890">x</a><a class="unbanish linklike" title="unhide" data-pid="5060683890">undo</a>]</span> </span> </p><p class="row" data-pid="5060684512" data-repost-of="4866460334"> <a href="/sfc/pet/5060684512.html" class="i" data-ids="0:00000_Zeq2BNlqjE,0:00V0V_5qDU1ULImaB,0:00W0W_lTfjwCDwOow,0:00a0a_29pmBaTdstT,0:00g0g_kXdafkkEb7e"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 08:20" title="Wed 10 Jun 08:20:01 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5060684512.html" data-id="5060684512" class="hdrlnk">Happy Dog Max Looking For Love</a> </span> <span class="l2"> <span class="pnr"> <small> (house/crate trained!)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5060684512">x</a><a class="unbanish linklike" title="unhide" data-pid="5060684512">undo</a>]</span> </span> </p><p class="row" data-pid="5060684952" data-repost-of="4886815374"> <a href="/sfc/pet/5060684952.html" class="i" data-ids="0:00808_9tg7bYH0exk,0:00606_4gfVHPlsBmY,0:00Q0Q_343lRxQH1nM,0:01111_gRMhzmN7OlG,0:00404_1GD3RtWEqn2,0:00c0c_cZViZhEBWmt"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 08:20" title="Wed 10 Jun 08:20:00 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5060684952.html" data-id="5060684952" class="hdrlnk">Handsome Hutch!</a> </span> <span class="l2"> <span class="pnr"> <small> (alamo square / nopa)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5060684952">x</a><a class="unbanish linklike" title="unhide" data-pid="5060684952">undo</a>]</span> </span> </p><p class="row" data-pid="5060687302" data-repost-of="4886815629"> <a href="/sfc/pet/5060687302.html" class="i" data-ids="0:00n0n_3ajktnutNpV,0:00B0B_9BBkqAtqCIS,0:00707_aB4OVkVbQzP,0:00U0U_dHOSvLdY20R,0:00F0F_lqBJjjbcQNF,0:00T0T_1RoR1AYWmAC"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 08:20" title="Wed 10 Jun 08:20:00 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5060687302.html" data-id="5060687302" class="hdrlnk">Copper- Bulldog/Mastiff/Pit Mix</a> </span> <span class="l2"> <span class="pnr"> <small> (Needs Foster/Forever Home)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5060687302">x</a><a class="unbanish linklike" title="unhide" data-pid="5060687302">undo</a>]</span> </span> </p><p class="row" data-pid="5060682889" data-repost-of="4886815858"> <a href="/sfc/pet/5060682889.html" class="i" data-ids="0:00Z0Z_9mugSGrRxkD,0:00e0e_7R7ZGkbKeG9,0:00W0W_fTq9JxaVrOp,0:00w0w_6EvnkXE3ts3"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 08:19" title="Wed 10 Jun 08:19:59 AM (-293 seconds ago)">Jun 10</time> <a href="/sfc/pet/5060682889.html" data-id="5060682889" class="hdrlnk">Handsome Curly is looking for his Moe</a> </span> <span class="l2"> <span class="pnr"> <small> (could that be you?)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5060682889">x</a><a class="unbanish linklike" title="unhide" data-pid="5060682889">undo</a>]</span> </span> </p><p class="row" data-pid="5067461215"> <a href="/sfc/pet/5067461215.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 08:03" title="Wed 10 Jun 08:03:26 AM (-832 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067461215.html" data-id="5067461215" class="hdrlnk">AKC Labs</a> </span> <span class="l2"> <span class="pnr"> <small> (Redding)</small> <span class="px"> <span class="p"> </span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067461215">x</a><a class="unbanish linklike" title="unhide" data-pid="5067461215">undo</a>]</span> </span> </p><p class="row" data-pid="5034558124" data-repost-of="4867218244"> <a href="/sfc/pet/5034558124.html" class="i" data-ids="0:00O0O_g9d1TOA6iR7,0:00505_58KNox86TGx,0:00W0W_887gUks7J5H"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 07:35" title="Wed 10 Jun 07:35:46 AM (-292 seconds ago)">Jun 10</time> <a href="/sfc/pet/5034558124.html" data-id="5034558124" class="hdrlnk">FERAL CAT: Got rodents? Barn cats are ready to help!</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5034558124">x</a><a class="unbanish linklike" title="unhide" data-pid="5034558124">undo</a>]</span> </span> </p><p class="row" data-pid="5067416774" data-repost-of="5030046118"> <a href="/sfc/pet/5067416774.html" class="i" data-ids="0:00D0D_2FP7yLvqLQZ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 07:35" title="Wed 10 Jun 07:35:04 AM (-773 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067416774.html" data-id="5067416774" class="hdrlnk">Reward: pitty lovers!!!</a> </span> <span class="l2"> <span class="pnr"> <small> (S. van ness)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067416774">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067416774">x</a><a class="unbanish linklike" title="unhide" data-pid="5067416774">undo</a>]</span> </span> </p><p class="row" data-pid="5067126655"> <a href="/sfc/pet/5067126655.html" class="i" data-ids="0:00g0g_exMS1Srlejj"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 01:19" title="Wed 10 Jun 01:19:00 AM (-6892 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067126655.html" data-id="5067126655" class="hdrlnk">Super sweet 2 yr old male Schnauzer mix rescued and available to adopt</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067126655">x</a><a class="unbanish linklike" title="unhide" data-pid="5067126655">undo</a>]</span> </span> </p><p class="row" data-pid="5067158853"> <a href="/sfc/pet/5067158853.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 01:12" title="Wed 10 Jun 01:12:11 AM (-353 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067158853.html" data-id="5067158853" class="hdrlnk">please don't post "free animals"/por favor no ponga "animales gratis"</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> <span class="maptag" data-pid="5067158853">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067158853">x</a><a class="unbanish linklike" title="unhide" data-pid="5067158853">undo</a>]</span> </span> </p><p class="row" data-pid="5067120457"> <a href="/sfc/pet/5067120457.html" class="i" data-ids="0:00k0k_ifFJcBSOQcX,0:00H0H_18uneixc6d,0:00e0e_8mUwNVe40hK"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 01:00" title="Wed 10 Jun 01:00:16 AM (-6652 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067120457.html" data-id="5067120457" class="hdrlnk">Playful 1 yr old female Doxie mix rescue for adoption</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067120457">x</a><a class="unbanish linklike" title="unhide" data-pid="5067120457">undo</a>]</span> </span> </p><p class="row" data-pid="5067116979"> <a href="/sfc/pet/5067116979.html" class="i" data-ids="0:01414_hRaHiGlSmze"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-10 00:37" title="Wed 10 Jun 12:37:24 AM (-5753 seconds ago)">Jun 10</time> <a href="/sfc/pet/5067116979.html" data-id="5067116979" class="hdrlnk">Calm and sweet 2.5 yr old male Terrier mix for adoption</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067116979">x</a><a class="unbanish linklike" title="unhide" data-pid="5067116979">undo</a>]</span> </span> </p><p class="row" data-pid="5067124855"> <a href="/sfc/pet/5067124855.html" class="i" data-ids="0:00q0q_8SISFarxHIm,0:01313_b5aHGL7XVE6,0:00n0n_AQBrLoMg0Y"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 23:57" title="Tue 09 Jun 11:57:41 PM (-2272 seconds ago)">Jun 9</time> <a href="/sfc/pet/5067124855.html" data-id="5067124855" class="hdrlnk">Friendly 8 mo old male Boxer-Lab mix available for adoption</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067124855">x</a><a class="unbanish linklike" title="unhide" data-pid="5067124855">undo</a>]</span> </span> </p><p class="row" data-pid="5067113351"> <a href="/sfc/pet/5067113351.html" class="i" data-ids="0:00k0k_76c3w7vb3L3"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 23:50" title="Tue 09 Jun 11:50:22 PM (-3413 seconds ago)">Jun 9</time> <a href="/sfc/pet/5067113351.html" data-id="5067113351" class="hdrlnk">Female 7 mo Border Collie mix, Daphne, rescued and ready for adoption</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067113351">x</a><a class="unbanish linklike" title="unhide" data-pid="5067113351">undo</a>]</span> </span> </p><p class="row" data-pid="5067129564"> <a href="/sfc/pet/5067129564.html" class="i" data-ids="0:00n0n_cqFPbQAsuog,0:00O0O_g8axObJfztA,0:00l0l_frRdZG3mAA0,0:00m0m_4GFI2AILgTc,0:00y0y_cd84WzXjNdo,0:00k0k_eOOsb4h0sUR,0:00S0S_lnLDAVydlGn,0:00S0S_8XhIa0qxhfM"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 23:30" title="Tue 09 Jun 11:30:52 PM (3 seconds ago)">Jun 9</time> <a href="/sfc/pet/5067129564.html" data-id="5067129564" class="hdrlnk">YORKHIRE PARTI PUPPIES</a> </span> <span class="l2"> <span class="pnr"> <small> (AUBURN)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067129564">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067129564">x</a><a class="unbanish linklike" title="unhide" data-pid="5067129564">undo</a>]</span> </span> </p><p class="row" data-pid="5067113471"> <a href="/sfc/pet/5067113471.html" class="i" data-ids="0:00H0H_ha4U9ypdR9u"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 23:30" title="Tue 09 Jun 11:30:38 PM (-2212 seconds ago)">Jun 9</time> <a href="/sfc/pet/5067113471.html" data-id="5067113471" class="hdrlnk">PUPPY FOR SALE MALTESE CHIHUAHUA DASCHUND MIX</a> </span> <span class="l2"> <span class="pnr"> <small> (bayview)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067113471">x</a><a class="unbanish linklike" title="unhide" data-pid="5067113471">undo</a>]</span> </span> </p><p class="row" data-pid="5040859289"> <a href="/sfc/pet/5040859289.html" class="i" data-ids="0:01515_i5Remh53twE"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 23:22" title="Tue 09 Jun 11:22:44 PM (-293 seconds ago)">Jun 9</time> <a href="/sfc/pet/5040859289.html" data-id="5040859289" class="hdrlnk">Dog Walker &amp; House Sitter in</a> </span> <span class="l2"> <span class="pnr"> <small> (cole valley / ashbury hts)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5040859289">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5040859289">x</a><a class="unbanish linklike" title="unhide" data-pid="5040859289">undo</a>]</span> </span> </p><p class="row" data-pid="5067084741" data-repost-of="4902024124"> <a href="/sfc/pet/5067084741.html" class="i" data-ids="0:00n0n_5ZF7dYW8Sp5,0:00E0E_35HFFLU72Mu,0:00U0U_5quYSTe3nxD,0:00D0D_5hCsg38tc3b,0:00P0P_idhmJlIiMvQ,0:00J0J_5gBpcXvOErZ,0:00B0B_4rAOx7UmePw,0:00k0k_5O12yByEmYn,0:00101_hGhQjPOG2x7,0:00H0H_30Q8XlloUuM,0:00u0u_2DBxVI3z2Vc"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 22:01" title="Tue 09 Jun 10:01:23 PM (4 seconds ago)">Jun 9</time> <a href="/sfc/pet/5067084741.html" data-id="5067084741" class="hdrlnk">Super-Affectionate, Healthy, Happy Siblings Seek Next Loving Home</a> </span> <span class="l2"> <span class="pnr"> <small> (richmond / seacliff)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067084741">x</a><a class="unbanish linklike" title="unhide" data-pid="5067084741">undo</a>]</span> </span> </p><p class="row" data-pid="5067075801"> <a href="/sfc/pet/5067075801.html" class="i" data-ids="0:00j0j_8ZZ2KpZpc1W,0:00d0d_fAAttnNpU3X"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 21:47" title="Tue 09 Jun 09:47:22 PM (11 hours ago)">Jun 9</time> <a href="/sfc/pet/5067075801.html" data-id="5067075801" class="hdrlnk">rare canaries: red satinnet (red eyes), agate</a> </span> <span class="l2"> <span class="pnr"> <small> (SF airport)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067075801">x</a><a class="unbanish linklike" title="unhide" data-pid="5067075801">undo</a>]</span> </span> </p><p class="row" data-pid="5067054152"> <a href="/sfc/pet/5067054152.html" class="i" data-ids="0:00x0x_cRV9zGnzKqH,0:00o0o_1BHarTHUjXm"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 21:28" title="Tue 09 Jun 09:28:14 PM (14 hours ago)">Jun 9</time> <a href="/sfc/pet/5067054152.html" data-id="5067054152" class="hdrlnk">Sunshine Bull Mastiff need a forever home for Sunshine</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5067054152">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5067054152">x</a><a class="unbanish linklike" title="unhide" data-pid="5067054152">undo</a>]</span> </span> </p><p class="row" data-pid="5066991315" data-repost-of="4909113406"> <a href="/sfc/pet/5066991315.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 20:02" title="Tue 09 Jun 08:02:58 PM (4 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066991315.html" data-id="5066991315" class="hdrlnk">Please boycott "West of Pecos", they tossed a disabled man + dog out!</a> </span> <span class="l2"> <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> <span class="maptag" data-pid="5066991315">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066991315">x</a><a class="unbanish linklike" title="unhide" data-pid="5066991315">undo</a>]</span> </span> </p><p class="row" data-pid="5066990641" data-repost-of="4896238071"> <a href="/sfc/pet/5066990641.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 20:02" title="Tue 09 Jun 08:02:20 PM (4 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066990641.html" data-id="5066990641" class="hdrlnk">Dog loving couple looking to dog-walk/play</a> </span> <span class="l2"> <span class="pnr"> <small> (richmond / seacliff)</small> <span class="px"> <span class="p"> <span class="maptag" data-pid="5066990641">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066990641">x</a><a class="unbanish linklike" title="unhide" data-pid="5066990641">undo</a>]</span> </span> </p><p class="row" data-pid="5053976060" data-repost-of="4881004854"> <a href="/sfc/pet/5053976060.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 18:29" title="Tue 09 Jun 06:29:31 PM (-292 seconds ago)">Jun 9</time> <a href="/sfc/pet/5053976060.html" data-id="5053976060" class="hdrlnk">San Francisco foster homes needed for cat rescue!</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> </span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5053976060">x</a><a class="unbanish linklike" title="unhide" data-pid="5053976060">undo</a>]</span> </span> </p><p class="row" data-pid="5053252684" data-repost-of="4897253282"> <a href="/sfc/pet/5053252684.html" class="i" data-ids="0:00L0L_ccBCis6wwyi,0:00g0g_4MhFZ87btB0,0:00101_ggkqTrTYhLM,0:00303_esO9QOn9H5B,0:00N0N_gt73x11RGsF,0:00i0i_1xBg61CPGbK,0:00S0S_iopccN3qAIi,0:00b0b_93pO55XTowa,0:00n0n_8iZ6rIJTwOj,0:00M0M_5DyfE8R6j8t,0:00X0X_5FpoBBfmIuf,0:00H0H_k64ydeVo8QG"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 18:03" title="Tue 09 Jun 06:03:16 PM (-293 seconds ago)">Jun 9</time> <a href="/sfc/pet/5053252684.html" data-id="5053252684" class="hdrlnk">=^..^=Adopt us! Apollo and Tina =^..^=</a> </span> <span class="l2"> <span class="pnr"> <small> (inner richmond)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5053252684">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5053252684">x</a><a class="unbanish linklike" title="unhide" data-pid="5053252684">undo</a>]</span> </span> </p><p class="row" data-pid="5066806855"> <a href="/sfc/pet/5066806855.html" class="i" data-ids="0:00707_f3RkLnamUDY,0:01414_SBfucvzYPY,0:00a0a_2Rxyyzff7Hc,0:00Y0Y_1cIriALpqcB"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 17:24" title="Tue 09 Jun 05:24:51 PM (4 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066806855.html" data-id="5066806855" class="hdrlnk">Small 50lb Pittie- needs a family to call her own- Sweet as ever</a> </span> <span class="l2"> <span class="pnr"> <small> (Bay Area)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066806855">x</a><a class="unbanish linklike" title="unhide" data-pid="5066806855">undo</a>]</span> </span> </p><p class="row" data-pid="5066770715"> <a href="/sfc/pet/5066770715.html" class="i" data-ids="0:00S0S_5VVINBFAveS"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 17:12" title="Tue 09 Jun 05:12:27 PM (-893 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066770715.html" data-id="5066770715" class="hdrlnk">2 Adorable English bulldog pups,white/brown colors</a> </span> <span class="l2"> <span class="pnr"> <small> (downtown / civic / van ness)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5066770715">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066770715">x</a><a class="unbanish linklike" title="unhide" data-pid="5066770715">undo</a>]</span> </span> </p><p class="row" data-pid="5066776396" data-repost-of="5013439175"> <a href="/sfc/pet/5066776396.html" class="i" data-ids="0:00a0a_fiEHJw5WwgE,0:00Z0Z_liuf8nqCZ5H,0:00l0l_fuKmLCDk6VE,0:00F0F_gLrEwpCf2Oi"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 17:07" title="Tue 09 Jun 05:07:46 PM (-353 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066776396.html" data-id="5066776396" class="hdrlnk">ADOPT: Betty 2yr Pitbull, loves other dogs, playful, sweet!</a> </span> <span class="l2"> <span class="pnr"> <small> (Grateful Dogs Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066776396">x</a><a class="unbanish linklike" title="unhide" data-pid="5066776396">undo</a>]</span> </span> </p><p class="row" data-pid="5066772991" data-repost-of="4911745889"> <a href="/sfc/pet/5066772991.html" class="i" data-ids="0:00R0R_3GKXFJyvjeI,0:00505_lE5Gnb0tGfP,0:00k0k_eKGpOblMRb5,0:00R0R_3GKXFJyvjeI"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 16:59" title="Tue 09 Jun 04:59:16 PM (3 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066772991.html" data-id="5066772991" class="hdrlnk">Adopt Missy 4yr Dachshund/chi, quiet home, dog friendly sweet</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066772991">x</a><a class="unbanish linklike" title="unhide" data-pid="5066772991">undo</a>]</span> </span> </p><p class="row" data-pid="5066771738" data-repost-of="4913202417"> <a href="/sfc/pet/5066771738.html" class="i" data-ids="0:00606_blwoNtVb1wl,0:00V0V_bwUS9mY8ZA2,0:00d0d_h5yhSpPfx3T"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 16:58" title="Tue 09 Jun 04:58:18 PM (4 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066771738.html" data-id="5066771738" class="hdrlnk">ADOPT Cosmo 8mo pitbull boxer, loves other dogs!</a> </span> <span class="l2"> <span class="pnr"> <small> (Grateful Dog Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066771738">x</a><a class="unbanish linklike" title="unhide" data-pid="5066771738">undo</a>]</span> </span> </p><p class="row" data-pid="5066769520" data-repost-of="5001248635"> <a href="/sfc/pet/5066769520.html" class="i" data-ids="0:01717_lBQhZIfP7uz,0:00y0y_cB4tVWBsjNZ,0:00000_5QMV4tN7zhA"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 16:56" title="Tue 09 Jun 04:56:36 PM (4 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066769520.html" data-id="5066769520" class="hdrlnk">ADOPT: JD 3mo Pitbull Puppy</a> </span> <span class="l2"> <span class="pnr"> <small> (Grateful Dogs Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066769520">x</a><a class="unbanish linklike" title="unhide" data-pid="5066769520">undo</a>]</span> </span> </p><p class="row" data-pid="5066764650" data-repost-of="5007337605"> <a href="/sfc/pet/5066764650.html" class="i" data-ids="0:00q0q_e0M5gSGyFEm,0:00l0l_2JeDQqgpJuM,0:01616_i6DmMdAjLsh,0:00h0h_5nuoe7lJhVQ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 16:53" title="Tue 09 Jun 04:53:01 PM (4 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066764650.html" data-id="5066764650" class="hdrlnk">ADOPT: Scout 3yr Chi/Boston Terrier, energetic, playful, cat friendly</a> </span> <span class="l2"> <span class="pnr"> <small> (Grateful Dogs Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066764650">x</a><a class="unbanish linklike" title="unhide" data-pid="5066764650">undo</a>]</span> </span> </p><p class="row" data-pid="5066763378"> <a href="/sfc/pet/5066763378.html" class="i" data-ids="0:00u0u_8Ss4zFGyGWa,0:00A0A_lHQIWNfvwKm,0:01313_jfJuNe9BkPx,0:00v0v_cL4h5oYdLd6,0:00909_dccWyJZiN9e,0:00H0H_frLzsKImYpv"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 16:52" title="Tue 09 Jun 04:52:05 PM (28 minutes ago)">Jun 9</time> <a href="/sfc/pet/5066763378.html" data-id="5066763378" class="hdrlnk">FOSTER NEEDED Chocolate 3yr Chesapeake/Lab high energy</a> </span> <span class="l2"> <span class="pnr"> <small> (Grateful Dogs Rescue)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066763378">x</a><a class="unbanish linklike" title="unhide" data-pid="5066763378">undo</a>]</span> </span> </p><p class="row" data-pid="5051785274" data-repost-of="5034671568"> <a href="/sfc/pet/5051785274.html" class="i" data-ids="0:00g0g_3It5dh2s41l,0:00i0i_2Xvs9kxONBw,0:00n0n_blcsJVXTMMp"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 16:50" title="Tue 09 Jun 04:50:41 PM (-293 seconds ago)">Jun 9</time> <a href="/sfc/pet/5051785274.html" data-id="5051785274" class="hdrlnk">Boston Terrier looking for a great home</a> </span> <span class="l2"> <span class="pnr"> <small> (SOMA / south beach)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5051785274">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5051785274">x</a><a class="unbanish linklike" title="unhide" data-pid="5051785274">undo</a>]</span> </span> </p><p class="row" data-pid="5066707628"> <a href="/sfc/pet/5066707628.html" class="i" data-ids="0:00s0s_1zhf6WEXcPz,0:00S0S_gPLyr77ia62,0:01717_1EmQwfCDBXl,0:00606_lVeLcjomdGr,0:00q0q_gSnxa5jJTDz"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 16:12" title="Tue 09 Jun 04:12:19 PM (6 hours ago)">Jun 9</time> <a href="/sfc/pet/5066707628.html" data-id="5066707628" class="hdrlnk">Yorkshire Terrier female "Bebe"</a> </span> <span class="l2"> <span class="pnr"> <small> (Antelope)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5066707628">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066707628">x</a><a class="unbanish linklike" title="unhide" data-pid="5066707628">undo</a>]</span> </span> </p><p class="row" data-pid="5066692300"> <a href="/sfc/pet/5066692300.html" class="i" data-ids="0:00606_8qZjpqFxGwg"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 16:01" title="Tue 09 Jun 04:01:54 PM (3 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066692300.html" data-id="5066692300" class="hdrlnk">Missing Grey Cat</a> </span> <span class="l2"> <span class="pnr"> <small> (mission district)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066692300">x</a><a class="unbanish linklike" title="unhide" data-pid="5066692300">undo</a>]</span> </span> </p><p class="row" data-pid="5053680238"> <a href="/sfc/pet/5053680238.html" class="i" data-ids="0:00w0w_iVMnr3g4Rug"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 15:25" title="Tue 09 Jun 03:25:09 PM (-292 seconds ago)">Jun 9</time> <a href="/sfc/pet/5053680238.html" data-id="5053680238" class="hdrlnk">$35/night In Home Dog Sitter! Doggy Hostel fun for your pup!</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5053680238">x</a><a class="unbanish linklike" title="unhide" data-pid="5053680238">undo</a>]</span> </span> </p><p class="row" data-pid="5053518031"> <a href="/sfc/pet/5053518031.html" class="i" data-ids="0:00w0w_iVMnr3g4Rug"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 15:25" title="Tue 09 Jun 03:25:06 PM (-292 seconds ago)">Jun 9</time> <a href="/sfc/pet/5053518031.html" data-id="5053518031" class="hdrlnk">$35/night In Home Dog Sitter! Doggy Hostel fun for your pup!</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5053518031">x</a><a class="unbanish linklike" title="unhide" data-pid="5053518031">undo</a>]</span> </span> </p><p class="row" data-pid="5053293604"> <a href="/sfc/pet/5053293604.html" class="i" data-ids="0:00l0l_2dZlRoax9hU"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 15:25" title="Tue 09 Jun 03:25:03 PM (-292 seconds ago)">Jun 9</time> <a href="/sfc/pet/5053293604.html" data-id="5053293604" class="hdrlnk">$35/night In Home Dog Sitter! Small Dog Retreat</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5053293604">x</a><a class="unbanish linklike" title="unhide" data-pid="5053293604">undo</a>]</span> </span> </p><p class="row" data-pid="5053167745"> <a href="/sfc/pet/5053167745.html" class="i" data-ids="0:00808_4Dz3ov4xl5O"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 15:25" title="Tue 09 Jun 03:25:00 PM (-293 seconds ago)">Jun 9</time> <a href="/sfc/pet/5053167745.html" data-id="5053167745" class="hdrlnk">$35/night in home dog sitter with 23 5 star reviews!</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5053167745">x</a><a class="unbanish linklike" title="unhide" data-pid="5053167745">undo</a>]</span> </span> </p><p class="row" data-pid="5048954090"> <a href="/sfc/pet/5048954090.html" class="i"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 15:24" title="Tue 09 Jun 03:24:58 PM (-292 seconds ago)">Jun 9</time> <a href="/sfc/pet/5048954090.html" data-id="5048954090" class="hdrlnk">$40/Night In Home Dog Sitter! Wonderful Dog Sitter A Happy Dog!</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> </span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5048954090">x</a><a class="unbanish linklike" title="unhide" data-pid="5048954090">undo</a>]</span> </span> </p><p class="row" data-pid="5048839977"> <a href="/sfc/pet/5048839977.html" class="i" data-ids="0:00g0g_anI8jQDOImJ"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 15:24" title="Tue 09 Jun 03:24:56 PM (-293 seconds ago)">Jun 9</time> <a href="/sfc/pet/5048839977.html" data-id="5048839977" class="hdrlnk">$40/Night In Home Dog Sitter! Wonderful Dog Sitter A Happy Dog!</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5048839977">x</a><a class="unbanish linklike" title="unhide" data-pid="5048839977">undo</a>]</span> </span> </p><p class="row" data-pid="5039366168"> <a href="/sfc/pet/5039366168.html" class="i" data-ids="0:00r0r_4Lc4qLy9uTM"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 15:24" title="Tue 09 Jun 03:24:46 PM (-292 seconds ago)">Jun 9</time> <a href="/sfc/pet/5039366168.html" data-id="5039366168" class="hdrlnk">$35/night in home dog sitter with 23 5 star reviews!</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5039366168">x</a><a class="unbanish linklike" title="unhide" data-pid="5039366168">undo</a>]</span> </span> </p><p class="row" data-pid="5039244898"> <a href="/sfc/pet/5039244898.html" class="i" data-ids="0:00r0r_4Lc4qLy9uTM"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 15:24" title="Tue 09 Jun 03:24:44 PM (-293 seconds ago)">Jun 9</time> <a href="/sfc/pet/5039244898.html" data-id="5039244898" class="hdrlnk">$35/night in home dog sitter with 23 5 star reviews!</a> </span> <span class="l2"> <span class="pnr"> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5039244898">x</a><a class="unbanish linklike" title="unhide" data-pid="5039244898">undo</a>]</span> </span> </p><p class="row" data-pid="5049411036"> <a href="/sfc/pet/5049411036.html" class="i" data-ids="0:00000_hBEMjPM8OYu,0:00T0T_kLC4TF1yfnH"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 14:12" title="Tue 09 Jun 02:12:11 PM (-292 seconds ago)">Jun 9</time> <a href="/sfc/pet/5049411036.html" data-id="5049411036" class="hdrlnk">please give us our dog back</a> </span> <span class="l2"> <span class="pnr"> <small> (glen park)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5049411036">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5049411036">x</a><a class="unbanish linklike" title="unhide" data-pid="5049411036">undo</a>]</span> </span> </p><p class="row" data-pid="5046338089" data-repost-of="5029035098"> <a href="/sfc/pet/5046338089.html" class="i" data-ids="0:00000_eOLDf6ozypM,0:00x0x_ivKtl9XMTxw,0:00M0M_60gtEEczqzy,0:00z0z_jpmPDadGuBY,0:00y0y_z2YPultob,0:00000_gAy0cFWcNbB"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 14:11" title="Tue 09 Jun 02:11:47 PM (-293 seconds ago)">Jun 9</time> <a href="/sfc/pet/5046338089.html" data-id="5046338089" class="hdrlnk">lost or stolen black and white small chi weenie dog. REWARD.</a> </span> <span class="l2"> <span class="pnr"> <small> (glen park)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5046338089">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5046338089">x</a><a class="unbanish linklike" title="unhide" data-pid="5046338089">undo</a>]</span> </span> </p><p class="row" data-pid="5059494055"> <a href="/sfc/pet/5059494055.html" class="i" data-ids="0:00404_4ovlzr6hIbW,0:00K0K_6A5c3RsLfEv"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 13:58" title="Tue 09 Jun 01:58:51 PM (-292 seconds ago)">Jun 9</time> <a href="/sfc/pet/5059494055.html" data-id="5059494055" class="hdrlnk">white persian kitten</a> </span> <span class="l2"> <span class="pnr"> <small> (alamo square / nopa)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5059494055">x</a><a class="unbanish linklike" title="unhide" data-pid="5059494055">undo</a>]</span> </span> </p><p class="row" data-pid="5066463458" data-repost-of="5046092172"> <a href="/sfc/pet/5066463458.html" class="i" data-ids="0:01414_eziEX8dp4Dx"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 13:41" title="Tue 09 Jun 01:41:54 PM (3 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066463458.html" data-id="5066463458" class="hdrlnk">Affectionate and Cute Sun Conure</a> </span> <span class="l2"> <span class="pnr"> <small> (alamo square / nopa)</small> <span class="px"> <span class="p"> pic <span class="maptag" data-pid="5066463458">map</span></span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066463458">x</a><a class="unbanish linklike" title="unhide" data-pid="5066463458">undo</a>]</span> </span> </p><p class="row" data-pid="5066437225" data-repost-of="5028657888"> <a href="/sfc/pet/5066437225.html" class="i" data-ids="0:00r0r_ajS4I0MmrQD,0:00505_5tk9CcGfO3c,0:00t0t_1S76dDxVkMe"></a> <span class="txt"> <span class="star"></span> <span class="pl"> <time datetime="2015-06-09 13:27" title="Tue 09 Jun 01:27:24 PM (4 seconds ago)">Jun 9</time> <a href="/sfc/pet/5066437225.html" data-id="5066437225" class="hdrlnk">Piddle Place for sale</a> </span> <span class="l2"> <span class="pnr"> <small> (ingleside / SFSU / CCSF)</small> <span class="px"> <span class="p"> pic</span></span> </span> </span> <span class="js-only banish-unbanish no-mobile">[<a class="banish" title="hide" data-pid="5066437225">x</a><a class="unbanish linklike" title="unhide" data-pid="5066437225">undo</a>]</span> </span> </p>
+              <div id="mapcontainer" data-arealat="37.500000" data-arealon="-122.250000">
     <div id="noresult_overlay"></div>
         <div id="noresult_text">
             <span class="message">No mappable items found</span>
         </div>
     <div id="map" class="loading"><div class="closeFS">&times;</div></div>
 </div>
-<span class="timing"></span>
-                     
+              
+              <div class="toc_legend bottom">
+                <div class="center">
+                  <div class="tocview">
+                    <span class="buttongroup"><a class="backtotop button" href="#pagecontainer">^ back to top</a></span>
+                  </div>
+                  <div class="tocsort">
+                    <span class="buttongroup"><a class="backtotop button" href="#pagecontainer">^ back to top</a></span>
+                  </div>
+                  <span class="paginator buttongroup  firstpage"><span class="resulttotal">displaying <span class="displaycount">...</span> of <span class="totalcount">269</span> postings</span><span class="buttons"><a href="/search/sfc/pet" class="button first" title="first page">&lt;&lt;</a><span class="button first" title="first page">&lt;&lt;</span><a href="/search/sfc/pet" class="button prev" title="previous page">&lt; prev</a><span class="button prev" title="previous page">&lt; prev</span><span class="button pagenum"><span class="range"><span class="rangeFrom">1</span> to <span class="rangeTo">100</span></span> of <span class="totalcount">269</span></span><a href="/search/sfc/pet?s=100" class="button next" title="next page"> next &gt; </a><span class="button next" title="next page"> next &gt; </span></span></span>
                 </div>
-
-                <div class="toc_legend bottom">
-                    <div class="center">
-                        <span class="paginator buttongroup">
-<span class="resulttotal">displaying <span class='displaycount'>...</span>  postings</span><span class="buttons"><span class="button first" title="first page"> &lt;&lt; </span><span class="button prev" title="previous page"> &lt; prev </span><span class="button pagenum">1 - 100 </span><a href='/sfc/pet/index100.html' class="button next" title="next page"> next &gt; </a></span>
-</span><span class="tocsort buttongroup"><a class="backtotop button" href="#pagecontainer">^ back to top</a></span>
-                    </div>
-                </div>
-
+              </div>
             </div>
-            <div id="floater">
-                <img class="loading" src="//www.craigslist.org/images/animated-spinny.gif" alt="">
-                <img class="payload" src="//www.craigslist.org/images/animated-spinny.gif" alt="">
-            </div>
+          </div>
+          <section class="blurbs">
+              
+          </section>
 
-            <section class="blurbs">
-                <blockquote id="messagetable"><div id="messages"><span class="hl"> [<a href="http://www.bapd.org/kanion-1.html">animals dir</a>] </span>
-<span class="hl"> [ <a href="http://youtube.com/craigslist">tv</a> ] </span>
-<span class="hl"> [ <a href="http://blog.craigslist.org/">blog</a> ] </span>
-<span class="hl"> [ <a href="/about/safety">safety</a> ] </span>
-<span class="hl"> [ <a href="/about/prohibited">prohibited</a> ] </span>
-</div></blockquote>
-            </section>
-        </section>
+          <div id="floater">
+            <img class="loading" src="//www.craigslist.org/images/animated-spinny.gif" alt="">
+            <img class="payload" src="//www.craigslist.org/images/animated-spinny.gif" alt="">
+          </div>
+          <template id="gallerycarousel">
+            <div class="sliderinfo"></div><div class="sliderback arrow">&lt;</div><div class="sliderforward arrow">&gt;</div>
+          </template>
+        </form>
+      </div>
+    <div class="mobile-only">
         
-        <footer>
+    </div>
+    
+    
+    <div class="discards footstool no-mobile js-only">
+    <p>
+        <strong class="hidden_count"></strong> hidden
+    </p>
+    
+    <!-- show if there is at least one hidden thing and the hidden are NOT revealed -->
+    <div class="show-discards-link linklike" role="button" tabindex="0">click to show</div>
+
+    <!-- show if there is at least one hidden thing and the hidden ARE not revealed -->
+    <div class="hide-discards-link linklike" role="button" tabindex="0">click to hide</div>
+</div>
+
+    <footer>
     
             <span class="rss">
-                <a class="l" href="/sfc/pet/index.rss">RSS</a>
+                <a class="l" href="https://sfbay.craigslist.org/search/sfc/pet?format=rss">RSS</a>
                 <a href="http://www.craigslist.org/about/rss">(?)</a><br>
             </span>
             
     <ul class="clfooter">
-        <li>&copy; 2014 <span class="desktop">craigslist</span><span class="mobile">CL</span></li>
+        <li>&copy; 2015 <span class="desktop">craigslist</span><span class="mobile">CL</span></li>
         <li><a href="//www.craigslist.org/about/help/">help</a></li>
         <li><a href="//www.craigslist.org/about/scams">safety</a></li>
         <li class="desktop"><a href="//www.craigslist.org/about/privacy.policy">privacy</a></li>
         <li class="desktop"><a href="https://forums.craigslist.org/?forumID=8">feedback</a></li>
         <li class="desktop"><a href="//www.craigslist.org/about/craigslist_is_hiring">cl jobs</a></li>
-        <li><a href="//www.craigslist.org/about/terms.of.use.en_US.UTF-8">terms</a></li>
+        <li><a href="//www.craigslist.org/about/terms.of.use">terms</a></li>
         <li><a href="//www.craigslist.org/about/">about</a></li>
-        <li class="fsel desktop" data-mode="mobile"><a href="#">mobile</a></li>
-        <li class="fsel mobile" data-mode="regular"><a href="#">desktop</a></li>
+        <li class="fsel desktop linklike" data-mode="mobile">mobile</li>
+        <li class="fsel mobile linklike" data-mode="regular">desktop</li>
     </ul>
 </footer>
-    </article>
-    <script  src="//www.craigslist.org/js/general-concat.min.js?v=57f9bf32e0931d3a4ba887c2618bc3de" type="text/javascript" ></script>
-    <script type="text/javascript"><!--
+  </article>
+  <script src="//www.craigslist.org/js/general-concat.min.js?v=dae4b3254666fd8bf88c511841a8ce94" type="text/javascript" ></script>
+  <script type="text/javascript"><!--
         var iframe = document.createElement('iframe');
         iframe.style.display = 'none';
         iframe.src = '//www.' + CL.url.baseDomain + '/static/localstorage.html?v=51a29e41f8e978141e4085ed4a77d170';
         document.body.insertBefore(iframe, null);
     --></script>
-    <script type="text/template" id="clustertemplate">
+  <script type="text/template" id="clustertemplate">
     <li class="posting {visited}" data-id="{PostingID}">
         <img src="{ImageThumb}">
         <div class="housing_bubble_banner">
          <span class="{hasPrice}price">{currencySymbol}{Ask}</span>
          <span class="bedrooms">{BedroomsContent}</span>
          <span class="postingtitle"><a>{PostingTitle}</a></span>
+         <span class="js-only map-banish-unbanish no-mobile" data-pid="{PostingID}">
+          [<a class="banish" id="banisher" data-pid="{PostingID}" title="hide">x</a><a class="unbanish" id="unbanisher" data-pid="{PostingID}" title="unhide">undo</a>]
+         </span>
         </div>
     </li>
 </script>
 <script type="text/template" id="postingtemplate">
     <div class="viewcontainer pics loading">
         <div class="backtolist">
-            <button class="back">&lt;</button> back to posting list
+            <button class="back" type="button">&lt;</button> back to posting list
         </div>
         <div class="title">
             <span class="star" data-pid="{PostingID}"></span>
-            <span class="postingtitle"><a href="{PostingURL}" target="_blank">{PostingTitle}</a></span>
+            <span class="postingtitle">
+              <a href="{PostingURL}" target="_blank">{PostingTitle}</a>
+            </span>
             <div>
                 <span class="{hasPrice}price">{currencySymbol}{Ask}</span>
                 <span class="bedrooms">{BedroomsContent}</span>
+                <span class="js-only map-banish-unbanish no-mobile single">
+                  [<a class="banish" id="banisher" data-pid="{PostingID}" title="hide">x</a><a class="unbanish" id="unbanisher" data-pid="{PostingID}" title="unhide">undo</a>]
+                </span> 
             </div>
         </div>
         <hr style="clear:both">
         <div class="picscontainer">
             <div class="slidernav">
-                <button class="back" disabled="disabled">&lt;</button><span class="sliderinfo"></span><button class="forward">&gt;</button>
+                <span class="sliderback">&lt;</span><span class="sliderinfo"></span><span class="sliderforward">&gt;</span>
             </div>
             <div class="swipe">
                 <div class="swipe-wrap">
@@ -508,7 +724,7 @@ var catType = "ccc";
         <div id="postbubble"></div>
     </div>
 </script>
-<script  src="//www.craigslist.org/js/leaflet-concat.min.js?v=ed5465917acae912c496d6a185be897b" type="text/javascript" ></script>
-    <script  src="//www.craigslist.org/js/tocs-concat.min.js?v=d6ac2ae7df539661a11aa89da5e4c0b7" type="text/javascript" ></script>
+<script src="//www.craigslist.org/js/leaflet-concat.min.js?v=0ef27e5f2c9b1e5cbc5ea075be4fd9fa" type="text/javascript" ></script>
+  <script src="//www.craigslist.org/js/tocs-concat.min.js?v=67dd9b70c221179c6c9429a17f81b131" type="text/javascript" ></script>
 </body>
 </html>
