@@ -5,7 +5,7 @@ Your task for tonight is to write a __Puppy Scraper__. Your scraper will search 
 
 ### Requirements
 1. Use Nokogiri to scrape craigslist using `today.html`
-2. Use regex to match the text you search for ("pup", "puppy", "dog") and make sure you are only returning results from June 10th
+2. Use regex to match the text you search for ("pup", "puppy", "dog") and make sure you are only returning results from June 11th
 3. Test your methods and regular expressions with rspec
 
 
